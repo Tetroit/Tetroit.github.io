@@ -1,0 +1,442 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto Condensed:wght@400;900&display=swap');
+@keyframes spin {
+    from {
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+    to {
+        transform: rotate3d(0, 0, 1, 360deg);
+    }
+}
+@property --gradient {
+    syntax: '<color>';
+    initial-value: #00000000;
+    inherits: false;
+  }
+
+
+  
+h1{
+    margin: auto;
+    text-align: center; 
+    color: white; 
+    font-size: 60px; 
+    font-family: Roboto Condensed; 
+    font-weight: 400; 
+    word-wrap: break-word;
+}
+h2{
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-family: Roboto Condensed;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+h3{
+    margin: auto;
+    color: white; 
+    font-size: 30px; 
+    font-family: Roboto Condensed; 
+    font-weight: 400; 
+}
+
+h4{
+    margin: auto;
+    color: white; 
+    font-size: 15px; 
+    font-family: Roboto Condensed; 
+    font-weight: 400; 
+}
+
+body{
+    margin: 0;
+    border: 0;
+}
+
+
+.Main{
+    width: 100vw; 
+    height: 100vh; 
+    position: fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url(../images/main_background.png);
+}
+.Photo{
+    width: 150px; 
+    height: 150px; 
+    left: 87px; 
+    top: 196px; 
+    position: absolute; 
+    background: #D9D9D9; 
+    border-radius: 9999px;
+}
+.Info{
+    right: 111px; 
+    top: 100px; 
+    position: absolute; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    gap: 6px; 
+    display: inline-flex;
+}
+.WhatBringsYouHere{
+    text-align: center; 
+    word-wrap: break-word;
+}
+.SwitchButton{
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    display: flex;
+}
+.Traveler{
+    text-align: center; 
+    color: #A40000; 
+    font-size: 29px; 
+    font-family: Roboto Condensed; 
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.HiIAmIvan{
+    left: 100px; 
+    top: 350px; 
+    position: absolute; 
+}
+.AtLeastInThisRealm{
+    
+    left: 250px;
+    top: 450px;
+    position: absolute;
+}
+.Nav{
+    padding: 10px;
+    right: 200px;
+    top: 200px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 100px;
+    display: inline-flex;
+}
+.Tab{
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+    border: 5px transparent solid;
+    border-image: linear-gradient(90deg, #00000000, var(--gradient), #00000000) 1;
+    transition: --gradient 0.3s;
+}
+.Tab:hover{
+  --gradient: red;
+}
+.TabWrapper{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+}
+.TabText{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-family: Roboto Condensed;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.Contact{
+    align-self: stretch;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+    display: inline-flex;
+}
+
+#Contacts{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+}
+.ContactName{
+    
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    display: flex;
+}
+.Ring{
+    position: absolute;
+    scale: 150%}
+#Ring1{
+    top:-130px;
+    left:-230px;
+    animation: spin 15s reverse infinite;
+    transform-origin: 50% 51%;
+}
+
+#Ring2{
+    top:-30px;
+    left:-130px;
+    animation: spin 10s linear infinite;
+    transform-origin: 50% 49%;
+}
+
+#Ring3{
+    top:70px;
+    left:-30px;
+    animation: spin 5s ease-in-out infinite;
+    transform-origin: 51% 50%;
+}
+.MainScrollArea{
+    
+    height: 720px;
+    left: 85px;
+    top: 0px;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: inline-flex;
+}
+.JourneyContent{
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    display: flex;
+}
+
+.MainChain{
+    width: 100px; 
+    height: 2000px;
+    background-image: url(/images/chain.png);
+    background-repeat: repeat-y;
+    background-size: 100px;
+    flex-shrink: 0;
+}
+.ChainGlowArea{
+    left: 0.33px;
+    top: 300px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 300px;
+    display: inline-flex;
+}
+.ChainGlow{
+    width: 100px;
+    height: 300px;
+    transform-origin: 0 0;
+}
+.Projects{
+    width: auto;
+    margin-right: 200px;
+    height: 2397px;
+    padding-top: 200px;
+    padding-bottom: 600px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: inline-flex;
+    gap: 100px;
+}
+.Proj {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    display: flex;
+    height: 500px;
+}
+.Desc{
+    width: auto;
+}
+.Showcase{
+    width: 100%;
+    align-items: flex-start;
+    height: auto;
+    gap: 10px;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.ProjectContent{
+    flex-grow: 1;
+    width: 60%;
+    min-width: 510px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 5px #a40000 solid;
+    display: block;
+}
+.Image{
+    object-fit: cover;
+    border-radius: 15px;
+    height: auto;
+    width: 100%;
+    min-width: 500px;
+}
+.Tasks{
+    flex-grow: 1;
+    width: 30%;
+    min-width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    display: inline-flex;
+}
+.Justification{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
+.Challenge{
+    width: 100%;
+    max-height: 70px;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
+.ChallengeContent{
+    width: 100%;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+}
+.ChallengeDesc{
+    flex-grow: 1;
+    position: relative;
+    right: 0;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-family: Roboto Condensed;
+    font-weight: 400;
+    word-wrap: break-word;
+    justify-content: center;
+}
+.ChallengeBar{
+    flex-grow: 1;
+    width: 100%;
+    height: 20px;
+    align-self: stretch;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+.BarName{
+    
+    text-align: center;
+    color: #ffe70d;
+    font-size: 12px;
+    font-family: Roboto Condensed;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.Bar{
+    height: 20%;
+    position: relative;
+    background: linear-gradient(
+      180deg,
+      #ffe70d 0%,
+      rgba(255, 230.77, 12.75, 0.5) 100%
+    );
+    border-radius: 2px;
+}
+
+.Remark{
+    align-self: stretch;
+    text-align: center;
+    color: #d9d9d9;
+    font-size: 16px;
+    font-family: Roboto Condensed;
+    font-style: italic;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+#easy>.Bar{
+    width: 25%;
+    background: linear-gradient(
+      180deg,
+      #5aff0d 0%,
+      rgba(90.27, 255, 12.75, 0.5) 100%
+    );
+}
+#medium>.Bar{
+    width: 50%;
+    background: linear-gradient(
+      180deg,
+      #ffe70d 0%,
+      rgba(255, 230.77, 12.75, 0.5) 100%
+    );
+}
+#hard>.Bar{
+    width: 75%;
+    background: linear-gradient(
+      180deg,
+      #FF810D 0%,
+      #ff820d7e 100%
+    );
+}
+
+#extreme>.ChallengeDesc{
+    width: 100%;
+    background: linear-gradient(
+      180deg,
+      #FF0D0D 0%,
+      #ff0d0d77 100%
+    );
+}
+#easy>.BarName{
+    color: #5aff0d;
+}
+#medium>.BarName{
+    color: #ffe70d;
+}
+#hard>.BarName{
+    color: #FF810D;
+}
+#extreme>.BarName{
+    color: #FF0D0D;
+}
+
+.Back{
+    padding: 10px;
+    right: 20px;
+    top: 10px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+    border: 5px transparent solid;
+    border-image: linear-gradient(90deg, #00000000, var(--gradient), #00000000) 1;
+    transition: --gradient 0.3s;
+}
+
+.Back:hover{
+    --gradient: red;
+}
+.Title{
+    top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    position: absolute;
+}
