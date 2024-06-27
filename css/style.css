@@ -50,6 +50,29 @@ h4{
     font-weight: 400; 
 }
 
+a{
+    align-self: stretch;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-start;
+    display: inline-flex;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
 body{
     margin: 0;
     border: 0;
@@ -71,15 +94,7 @@ body{
     background: #D9D9D9; 
     border-radius: 9999px;
 }
-.Info{
-    right: 111px; 
-    top: 100px; 
-    position: absolute; 
-    justify-content: flex-start; 
-    align-items: flex-start; 
-    gap: 6px; 
-    display: inline-flex;
-}
+
 .WhatBringsYouHere{
     text-align: center; 
     word-wrap: break-word;
@@ -109,15 +124,22 @@ body{
     top: 450px;
     position: absolute;
 }
+.Info{
+    position: relative; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    gap: 6px; 
+    display: inline-flex;
+}
 .Nav{
     padding: 10px;
-    right: 200px;
-    top: 200px;
+    right: calc(50vw - 500px);
+    top: 100px;
     position: absolute;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
-    gap: 100px;
+    align-items: center;
+    gap: 70px;
     display: inline-flex;
 }
 .Tab{
@@ -132,6 +154,7 @@ body{
 }
 .Tab:hover{
   --gradient: red;
+  cursor: pointer;
 }
 .TabWrapper{
     justify-content: center;
@@ -141,26 +164,31 @@ body{
 }
 .TabText{
     text-align: center;
-    color: white;
-    font-size: 40px;
-    font-family: Roboto Condensed;
-    font-weight: 400;
-    word-wrap: break-word;
 }
 .Contact{
     align-self: stretch;
+    width: 200px;
     padding: 10px;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     display: inline-flex;
+    border-radius: 10px;
+}
+
+.Contact:hover{
+    background-color: #A4000050;
+    cursor: pointer;
 }
 
 #Contacts{
+    position: absolute;
     justify-content: center;
     align-items: center;
     display:flex;
-    flex-direction: column;
-    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 500px;
+    bottom: -150px;
 }
 .ContactName{
     
@@ -203,6 +231,7 @@ body{
     display: inline-flex;
 }
 .JourneyContent{
+    height: 2300px;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 10px;
@@ -211,7 +240,7 @@ body{
 
 .MainChain{
     width: 100px; 
-    height: 2000px;
+    height: 100%;
     background-image: url(/images/chain.png);
     background-repeat: repeat-y;
     background-size: 100px;
@@ -235,9 +264,8 @@ body{
 .Projects{
     width: auto;
     margin-right: 200px;
-    height: 2397px;
     padding-top: 200px;
-    padding-bottom: 600px;
+    padding-bottom: 300px;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -303,24 +331,23 @@ body{
     display: flex;
 }
 .Challenge{
-    width: 100%;
     max-height: 70px;
-    flex-grow: 1;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     display: flex;
 }
+.Tasks>.Challenge{
+    width: 100%;
+}
 .ChallengeContent{
     width: 100%;
-    flex-grow: 1;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
     display: flex;
 }
 .ChallengeDesc{
-    flex-grow: 1;
     position: relative;
     right: 0;
     text-align: center;
@@ -332,7 +359,6 @@ body{
     justify-content: center;
 }
 .ChallengeBar{
-    flex-grow: 1;
     width: 100%;
     height: 20px;
     align-self: stretch;
@@ -396,7 +422,7 @@ body{
     );
 }
 
-#extreme>.ChallengeDesc{
+#extreme>.Bar{
     width: 100%;
     background: linear-gradient(
       180deg,
@@ -418,10 +444,10 @@ body{
 }
 
 .Back{
+    position: fixed;
     padding: 10px;
     right: 20px;
     top: 10px;
-    position: absolute;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -440,3 +466,108 @@ body{
     margin-right: 200px;
     position: absolute;
 }
+.MySkills{
+    top: 50px;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+}
+.SkillsDesc{
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    top:200px;
+    text-align: center;
+}
+.SkillSectionsContainer{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+    top: 500px;
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.SkillSection{
+    flex: 1 1 0;
+    align-self: stretch;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 5px #820000 solid;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    display: inline-flex;
+    min-width: 400px;
+    width: auto;
+}
+.SkillSectionName{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-family: Roboto Condensed;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.Skill{
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-start;
+    display: inline-flex;
+}
+.SkillName{
+    margin: 0;
+    text-align: center;
+    width: 20%;
+    font-size: 20px;
+}
+.SkillTime{
+    
+    text-align: center;
+    width: 40%;
+    font-size: 20px;
+}
+.SkillLevel{
+    margin-left: 20px;
+    width: 30%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: inline-flex;
+}
+.SkillBarContainer{
+    width: 100%;
+    height: 23px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+.BarDesc{
+    
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-family: Roboto Condensed;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+
+          

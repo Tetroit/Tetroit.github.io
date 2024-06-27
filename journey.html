@@ -175,7 +175,8 @@
         </div>
       </div>
     </div>
-    <div class="Back">
+    <div class="Back" onclick="back()">
+      <script>function back() {window.location="index.html";}</script>
       <h2><- Back</h2>
     </div>
   </body>
@@ -251,6 +252,9 @@
       (element) => fadeOutOnScrollChain(element)
     );
   }
+  window.onload = function() {
+    scrollHandler();
+  };
   function easeOutCubic(x) {
     return 1 - Math.pow(1 - x, 3);
   }
