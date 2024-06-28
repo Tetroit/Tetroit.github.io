@@ -231,13 +231,12 @@ body{
     display: inline-flex;
 }
 .JourneyContent{
-    height: 2300px;
+    height: 4200px;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 10px;
     display: flex;
 }
-
 .MainChain{
     width: 100px; 
     height: 100%;
