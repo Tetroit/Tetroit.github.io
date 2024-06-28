@@ -189,6 +189,7 @@ body{
     flex-wrap: wrap;
     width: 500px;
     bottom: -150px;
+    display: none;
 }
 .ContactName{
     
