@@ -461,6 +461,7 @@ body{
 
 .Back:hover{
     --gradient: red;
+    cursor: pointer;
 }
 .Title{
     top: 50px;
