@@ -131,11 +131,19 @@
             <h3>What brings you here</h3>
           </div>
           <div class="SwitchButton">
-            <h3 class="Traveler">traveler</h3>
+            <h3 class="Traveler" id="GuestName" onclick="changeName()">traveler</h3>
           </div>
           <div class="WhatBringsYouHere">
             <h3>?</h3>
           </div>
+        </div>
+        <div class="Tab" onclick="openAbout()">
+          <script>
+            function openAbout() {
+              window.location = "about.html";
+            }
+          </script>
+          <h1 class="TabText">About me</h1>
         </div>
         <div class="Tab" onclick="openSkills()">
           <script>
@@ -145,6 +153,7 @@
           </script>
           <h1 class="TabText">My skills</h1>
         </div>
+        
         <div class="Tab" onclick="openJourney()">
           <script>
             function openJourney() {
@@ -267,4 +276,15 @@
       }
     </script>
   </body>
+  <script>
+    const names = ["traveler", "wizard", "fox", "penitent one", "humanoid", "avocado", "developer", "ghost", "mentally disordered bee"];
+    let currentName = 0;
+    function changeName(){
+      var x = document.getElementById("GuestName");
+      currentName ++;
+      if (currentName >= names.length)
+        currentName = 0;
+      x.textContent = names[currentName];
+    }
+  </script>
 </html>

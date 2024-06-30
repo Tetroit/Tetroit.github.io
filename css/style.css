@@ -96,8 +96,8 @@ body{
 }
 
 .WhatBringsYouHere{
-    text-align: center; 
-    word-wrap: break-word;
+    text-align: center;
+    word-wrap: none;
 }
 .SwitchButton{
     justify-content: center; 
@@ -106,12 +106,11 @@ body{
     display: flex;
 }
 .Traveler{
-    text-align: center; 
-    color: #A40000; 
-    font-size: 29px; 
-    font-family: Roboto Condensed; 
-    font-weight: 400;
-    word-wrap: break-word;
+    color: #A40000;
+}
+.Traveler:hover{
+    color: #ff0000;
+    cursor: pointer;
 }
 .HiIAmIvan{
     left: 100px; 
@@ -125,7 +124,9 @@ body{
     position: absolute;
 }
 .Info{
-    position: relative; 
+    top: -100px;
+    width: max-content;
+    position: absolute; 
     justify-content: flex-start; 
     align-items: flex-start; 
     gap: 6px; 
@@ -134,12 +135,12 @@ body{
 .Nav{
     padding: 10px;
     right: calc(50vw - 500px);
-    top: 100px;
+    top: 200px;
     position: absolute;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 70px;
+    gap: 20px;
     display: inline-flex;
 }
 .Tab{
@@ -298,6 +299,7 @@ body{
     flex-grow: 1;
     width: 60%;
     min-width: 510px;
+    max-height: 500px; 
     border-radius: 15px;
     overflow: hidden;
     border: 5px #a40000 solid;
@@ -568,6 +570,71 @@ body{
     font-weight: 400;
     word-wrap: break-word;
 }
+.About{
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+.AboutColumns{
+    width: 80%;
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    justify-content: space-around;
+    gap:20px;
+}
+.AboutColumn{
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.ImageHolder{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 25%;
+    border: 5px solid #A40000;
+}
+.AboutParagraph {
+    width: 500px;
+    margin: 20px;
+}
+.EducationTitle>a{
+    margin: auto;
+    text-align: center;
+    color: #A40000;
+    font-size: 40px;
+    font-family: Roboto Condensed;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.EducationTitle>a:hover{
+    
+    color: white;
+}
 
+.EducationYears{
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-family: Roboto Condensed;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.ImageHolder>img{
+    width: 100%;
+    height: 100%;
+}
 
           
