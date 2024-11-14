@@ -83,6 +83,12 @@ body{
     width: 100vw; 
     height: 100vh; 
     position: fixed;
+    display: inline-flex;
+    flex-wrap: wrap; 
+    align-items: start; 
+    align-content: start;
+    justify-content: center;
+    justify-items: start;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url(../images/main_background.png);
 }
 .Photo{
@@ -95,53 +101,67 @@ body{
     border-radius: 9999px;
 }
 
+.MainTitle{
+    position: relative;
+    width: 600px; 
+    height: 600px; 
+    display:inline;
+    min-width: 300px;
+}
 .WhatBringsYouHere{
     text-align: center;
     word-wrap: none;
 }
 .SwitchButton{
-    justify-content: center; 
-    align-items: center; 
-    gap: 10px; 
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     display: flex;
 }
+.HiIAmIvan{
+    width: fit-content;
+    margin-top: 350px;
+    margin-left: 50px;
+    left: 0px;
+    position: relative;
+    display: block;
+    align-items: start;
+
+}
+.AtLeastInThisRealm{
+    position: relative;
+    display: block;
+    margin-left: 100px;
+}
 .Traveler{
+    display: inline;
     color: #A40000;
 }
 .Traveler:hover{
     color: #ff0000;
     cursor: pointer;
 }
-.HiIAmIvan{
-    left: 100px; 
-    top: 350px; 
-    position: absolute; 
-}
-.AtLeastInThisRealm{
-    
-    left: 250px;
-    top: 450px;
-    position: absolute;
-}
-.Info{
-    top: -100px;
-    width: max-content;
-    position: absolute; 
-    justify-content: flex-start; 
-    align-items: flex-start; 
-    gap: 6px; 
-    display: inline-flex;
-}
 .Nav{
+    margin: auto;
+    margin-top: 200px;
+    position: relative;
     padding: 10px;
-    right: calc(50vw - 500px);
-    top: 200px;
-    position: absolute;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    justify-self: self-start;
     gap: 20px;
-    display: inline-flex;
+    display:inline-flex;
+    max-width: 500px;
+}
+.Info{
+    
+    gap: 6px; 
+    display: inline-block;
+    margin: auto;
+}
+.Info>*{
+    display: inline-block;
 }
 .Tab{
     padding: 10px;
@@ -200,6 +220,7 @@ body{
     display: flex;
 }
 .Ring{
+    z-index: -1;
     position: absolute;
     scale: 150%}
 #Ring1{
