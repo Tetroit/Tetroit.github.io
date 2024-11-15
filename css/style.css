@@ -304,6 +304,21 @@ body{
     display: flex;
     height: 500px;
 }
+.Name{
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-family: Roboto Condensed;
+    font-weight: 400;
+    word-wrap: break-word;  
+}
+.Name>a{
+    color:#A40000;
+}
+.Name>a:hover{
+    color:#FF0000;
+}
 .Desc{
     width: auto;
 }
