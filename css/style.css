@@ -159,10 +159,10 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    justify-self: self-start;
     gap: 20px;
     display:inline-flex;
     max-width: 500px;
+    height: fit-content;
 }
 .Info{
     
@@ -192,6 +192,7 @@ body{
     align-items: center;
     display:flex;
     flex-direction: column;
+    height: fit-content;
 }
 .TabText{
     text-align: center;
@@ -212,15 +213,16 @@ body{
 }
 
 #Contacts{
-    position: absolute;
+    position: relative;
     justify-content: center;
     align-items: center;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 500px;
-    bottom: -150px;
     display: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .ContactName{
     
