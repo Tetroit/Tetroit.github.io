@@ -109,6 +109,7 @@ body{
     justify-content: center;
     justify-items: start;
     align-items: start; 
+    overflow: hidden;
 }
 .MainTitle{
     position: relative;
@@ -231,7 +232,10 @@ body{
 .Ring{
     z-index: -1;
     position: absolute;
-    scale: 150%}
+    scale: 150%;
+    overflow: hidden;
+    clip-path: inset(0);
+}
 #Ring1{
     top:-130px;
     left:-230px;
