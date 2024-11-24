@@ -90,17 +90,26 @@ body{
     justify-content: center;
     justify-items: start;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url(../images/main_background.png);
+    z-index: -2;
 }
 .Photo{
     width: 150px; 
     height: 150px; 
     left: 87px; 
-    top: 196px; 
+    top: 196px;
     position: absolute; 
     background: #D9D9D9; 
     border-radius: 9999px;
 }
-
+.MainContent{
+    width: 100vw; 
+    position: absolute;
+    display: inline-flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    justify-items: start;
+    align-items: start; 
+}
 .MainTitle{
     position: relative;
     width: 600px; 
