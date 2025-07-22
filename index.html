@@ -161,15 +161,28 @@
         const wheelBright = document.querySelector('#bright-wheel');
 
         let speed = 1;
-        let angle = 0
-        document.addEventListener('mousemove', (e) => {
+        let angle = 0;
+        let isTouch = false;
+        document.addEventListener("mousemove", (e) => trackProximityMouse(e));
+        document.addEventListener("touchmove", (e) => trackProximityTouch(e));
+
+        function trackProximityMouse(e) {
+            trackProximity(e);
+        }
+
+        function trackProximityTouch(e) {
+            isTouch = true;
+            trackProximity(e.touches[0]);
+        }
+
+        function trackProximity(e){
             const dx = e.clientX/window.innerWidth - 0.5;
             const dy = e.clientY/window.innerHeight - 0.5;
             const dist = Math.sqrt(dx * dx + dy * dy);
             speed = 2 - dist * 7;
             if (speed < 0.2) speed = 0.2;
             if (speed > 3) speed = 3;
-        });
+        }
 
         let start = 0;
         function animate(timestamp)
