@@ -7,64 +7,56 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ivan Shychynov Personal Portfolio</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
 
   <body>
-    <div class="Main"></div>
+    <div class="background"></div>
+    <div class = "back button" onclick="openTab('index.html')">Back</div>
     <main class="About">
-      <div class="AboutColumns">
-        <div class="AboutColumn">
-          <div class="ImageHolder">
-            <img src="/images/pfpblur.png" />
+      <div class="main-container">
+        <div class="flex-area" style="padding-inline: 5%; align-content: center; gap: 10px">
+          <div style="width: 200px;" class="image-wrapper">
+            <img style="border: 5px solid #a40000; border-radius: 20px;" src="/images/pfpblur.png" />
           </div>
-          <div class="AboutParagraph">
-            <h1>I am Ivan Shychynov, a game developer</h1>
-          </div>
-          <div class="AboutParagraph">
-            <h3>
-              My main focus is graphics and gameplay development, but things I
-              love about game development is countless!
-            </h3>
-          </div>
-
-          <div class="AboutParagraph">
-            <h3>
-              My passion is natural sciences and virtual, interactive
-              environments. My goal is to create visual and dynamic user
-              experience.
-            </h3>
-          </div>
+          <h1 style="text-wrap-mode: wrap;">I am Ivan Shychynov, a game developer</h1>
+          <p>
+            My main focus is graphics and gameplay development, but things I
+            love about game development is countless!
+          </p>
+          <p>
+            My passion is natural sciences and virtual, interactive
+            environments. My goal is to create visual and dynamic user
+            experience.
+          </p>
         </div>
-        <div class="AboutColumn">
+        <div class="flex-area" style="flex-direction: column; gap:20px; flex: 2">
           <div class="AboutParagraph">
             <h1>Education</h1>
           </div>
           <div class="AboutParagraph">
-            <div class="EducationTitle">
-              <a href="https://kpnl145.kyiv.ua/"> Natural Sciences Lyceum #145</a>
-            </div>
-            <h3 class="EducationYears">2017-2022</h3>
+            <a class="medium-link" style="user-select: auto;" href="https://kpnl145.kyiv.ua/"> Natural Sciences Lyceum #145</a>
+            <h2 class="date">2017-2022</h2>
+            <p>High School</p>
           </div>
-
+          <div>
+            <a class="medium-link" style="user-select: auto;" href="https://knu.ua/"> Kyiv National University</a>
+            <h2 class="date">2022-2023</h2>
+            <p>Physics BCs (1st year only)</p>
+          </div>
           <div class="AboutParagraph">
-            <div class="EducationTitle">
-              <a href="https://www.saxion.edu/">
-                Saxion University of Applied Sciences</a
-              >
-            </div>
-            <h3 class="EducationYears">2023-2027</h3>
+              <a class="medium-link" style="user-select: auto;" href="https://www.saxion.edu/">Saxion University of Applied Sciences</a>
+              <h2 class="date">2023-2027</h2>
+              <p>Creative Media and Game Technologies BCs</p>
           </div>
         </div>
       </div>
-      <div class="Back" onclick="back()">
-        <script>
-          function back() {
-            window.location = "index.html";
-          }
-        </script>
-        <h2><- Back</h2>
-      </div>
     </main>
   </body>
+  
+  <script>
+    function openTab(tab) {
+      window.location = tab;
+    }
+  </script>
 </html>

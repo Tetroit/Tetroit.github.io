@@ -1,170 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
 
-    <meta name="description" content="Ivan Shychynov Personal Portfolio" />
+<head>
+	<meta charset="UTF-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ivan Shychynov Personal Portfolio</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+	<meta name="description" content="Ivan Shychynov Personal Portfolio" />
 
-  <body>
-    <div class="Main"></div>
-    <div class="MySkills">
-      <h1>My skills</h1>
-    </div>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Ivan Shychynov Personal Portfolio</title>
+	<link rel="stylesheet" href="css/index.css" />
+</head>
 
-    <h3 class="SkillsDesc">Welcome to my modest self-estimation page</h3>
-    <div class="SkillSectionsContainer">
-      <div class="SkillSection">
-        <div class="SkillSectionName">Academic skills</div>
-        <div class="Skill">
-          <h4 class="SkillName">Physics</h4>
-          <h4 class="SkillTime">5 year experience</h4>
-          <div class="SkillLevel">
-            <div class="SkillBarContainer" id="hard">
-              <div class="BarDesc">Advanced</div>
-              <div class="Bar"></div>
-            </div>
-          </div>
-        </div>
-        <div class="Skill">
-          <h4 class="SkillName">3D Math</h4>
-          <h4 class="SkillTime">2 year experience</h4>
-          <div class="SkillLevel">
-            <div class="SkillBarContainer" id="hard">
-              <div class="BarDesc">Advanced</div>
-              <div class="Bar"></div>
-            </div>
-          </div>
-        </div>
-        <div class="Skill">
-          <h4 class="SkillName">C#</h4>
-          <h4 class="SkillTime">1 year experience</h4>
-          <div class="SkillLevel">
-            <div class="SkillBarContainer" id="medium">
-              <div class="BarDesc">Amateur</div>
-              <div class="Bar"></div>
-            </div>
-          </div>
-        </div>
-        <div class="Skill">
-          <h4 class="SkillName">C++</h4>
-          <h4 class="SkillTime">2 year experience</h4>
-          <div class="SkillLevel">
-            <div class="SkillBarContainer" id="medium">
-              <div class="BarDesc">Amateur</div>
-              <div class="Bar"></div>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-      <div class="SkillSection">
-        <div class="SkillSectionName">Linguistic skills</div>
-        <div class="Skill">
-          <h4 class="SkillName">Ukrainian</h4>
-          <div class="SkillLevel">
-            <div class="SkillBarContainer" id="extreme">
-              <div class="BarDesc">Native</div>
-              <div class="Bar"></div>
-            </div>
-          </div>
-        </div>
-        <div class="Skill">
-          <h4 class="SkillName">English</h4>
-          <div class="SkillLevel">
-            <div class="SkillBarContainer" id="hard">
-              <div class="BarDesc">C1</div>
-              <div class="Bar"></div>
-            </div>
-          </div>
-        </div>
-        <div class="Skill">
-          <h4 class="SkillName">Japanese</h4>
-          <div class="SkillLevel">
-            <div class="SkillBarContainer" id="easy">
-              <div class="BarDesc">N4</div>
-              <div class="Bar"></div>
-            </div>
-          </div>
-        </div>
-        <div class="Skill">
-          <h4 class="SkillName">German</h4>
-          <div class="SkillLevel">
-            <div class="SkillBarContainer" id="easy">
-              <div class="BarDesc">A2</div>
-              <div class="Bar"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="SkillSection">
-        <div class="SkillSectionName">Social skills</div>
-        <div
-          class="Skill"
-          style="
-            align-self: stretch;
-            justify-content: space-between;
-            align-items: flex-start;
-            display: inline-flex;
-          "
-        >
-          <div
-            class="SkillName"
-            style="
-              flex: 1 1 0;
-              text-align: center;
-              color: white;
-              font-size: 20px;
-              font-family: Roboto Condensed;
-              font-weight: 400;
-              word-wrap: break-word;
-            "
-          >
-            4 years of experience of team working and leadership since high
-            school. Collaborating mostly with people from area of my expertise,
-            however also keeping great relationship with representatives of
-            other roles and areas.
-          </div>
-        </div>
-        <div
-          class="Skill"
-          style="
-            align-self: stretch;
-            justify-content: space-between;
-            align-items: flex-start;
-            display: inline-flex;
-          "
-        >
-          <div
-            class="SkillName"
-            style="
-              flex: 1 1 0;
-              text-align: center;
-              color: white;
-              font-size: 20px;
-              font-family: Roboto Condensed;
-              font-weight: 400;
-              word-wrap: break-word;
-            "
-          >
-            Ability to listen and rationally decide between multiple opinions.
-            Not putting my interests over group’s goal. Avoiding conflicts by
-            willing to understand both sides
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="Back" onclick="back()">
-      <script>
-        function back() {
-          window.location = "index.html";
-        }
-      </script>
-      <h2><- Back</h2>
-    </div>
-  </body>
+<body>
+	
+	<div class="background" style="z-index: -10;"></div>
+	<div class = "back button" onclick="openTab('index.html')">
+		Back
+	</div>
+	<main class="skills-container">
+		
+		<div class="flex-area" style="width: 100%; flex: 1 0 100%; height: fit-content; gap: 10px">
+			<h2>In general</h2>
+			<p>I see <span class="emphasis">math</span> and <span class="emphasis">science</span> 
+				as forms of <span class="emphasis">art</span> — this perspective is what fuels my passion and curiosity.</p>
+			<p>I have experience working both independently and in teams, with over four years of collaboration and leadership starting from high school.</p>
+			<p>I'm results-oriented and always eager to consider all ideas before moving forward.</p>
+		</div>
+		<div class="flex-area" style="gap: 20px; flex: 1 0 50%;">
+			<h2>Programming skills</h2>
+			<div style="display: flex; text-align: start; flex-direction: column; gap: 10px; max-width: 60%; min-width: fit-content;">
+				<p><span style="font-size: 30px;">C#</span> - <span class="emphasis">2.5 years</span> 
+					of experience with Unity and custom engines and frameworks</p>
+				<p><span style="font-size: 30px;">C++</span> - <span class="emphasis">1.5 years</span> 
+					of experience, worked with GLFW, OpenGL and SFML</p>
+				<p><span style="font-size: 30px;">Unity</span> - <span class="emphasis">2 years</span> 
+					of experience, worked in URP, HDRP, main areas are graphics, gameplay and project architecture</p>
+				<p><span class = "comment" style="font-size: 20px;">JavaScript - only for this website, never touching it again...</span></p>
+			</div>
+		</div>
+		<div class="flex-area" style="gap: 20px; min-width: fit-content; flex: 1 0 50%;">
+			<div style="display: block;">
+				<h2>Language skills</h2>
+				<p class="comment">This is rather a hobby at this point</p>
+			</div>
+			<div style="display: flex; width: 60%; justify-content: space-between; border-bottom: 2px solid white;">
+				<p>Ukrainian</p>
+				<p>Native</p>
+			</div>
+			<div style="display: flex; width: 60%; justify-content: space-between; border-bottom: 2px solid white;">
+				<p>English</p>
+				<p>C1</p>
+			</div>
+			<div style="display: flex; width: 60%; justify-content: space-between; border-bottom: 2px solid white;">
+				<p>Japanese</p>
+				<p>N4-N3</p>
+			</div>
+			<div style="display: flex; width: 60%; justify-content: space-between; border-bottom: 2px solid white;">
+				<p>German</p>
+				<p>A5-A4</p>
+			</div>
+			<div style="display: flex; width: 60%; justify-content: space-between; border-bottom: 2px solid white;">
+				<p>Dutch</p>
+				<p>Work in progress</p>
+			</div>
+		</div>
+	</main>
+</body>
+<script>
+    function openTab(tab) {
+        window.location = tab;
+    }
+</script>
 </html>

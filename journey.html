@@ -1,462 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+    <head>
+        <meta charset="UTF-8" />
 
-    <meta name="description" content="Ivan Shychynov Personal Portfolio" />
+        <meta name="description" content="Ivan Shychynov Personal Portfolio" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ivan Shychynov Personal Portfolio</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-
-  <body>
-    <div class="Main"></div>
-    <div class="MainScrollArea">
-      <h1 class="Title" id="Title">
-        My journey as a game developer begins here
-      </h1>
-      <div class="JourneyContent">
-        <div class="MainChain"></div>
-        <div class="ChainGlowArea">
-          <img class="ChainGlow" src="/images/chainglow.png" />
-          <img class="ChainGlow" src="/images/chainglow.png" />
-          <img class="ChainGlow" src="/images/chainglow.png" />
-          <img class="ChainGlow" src="/images/chainglow.png" />
-          <img class="ChainGlow" src="/images/chainglow.png" />
-          <img class="ChainGlow" src="/images/chainglow.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ivan Shychynov Personal Portfolio</title>
+        <link rel="stylesheet" href="css/index.css" />
+    </head>
+    <body>
+        <div class="background" style="z-index: -10;"></div>
+        
+        <div class="graphics-container" style="inset: 0; z-index: -1;">
+            <img id="parallax1" class="graphics" style="top:-300px; left: -100px;" src="/images/star1.png"/>
+            <img id="parallax1" class="graphics" style="top:0px; left: 1000px;" src="/images/star2.png"/>
+            <img id="parallax1" class="graphics" style="top:700px; left: 0px;" src="/images/star3.png"/>
+            <img id="parallax1" class="graphics" style="top:1300px; left: 600px;" src="/images/star1.png"/>
+            <img id="parallax1" class="graphics" style="top:1700px; left: 1000px;" src="/images/star2.png"/>
+            <img id="parallax1" class="graphics" style="top:2300px; left: -300px;" src="/images/star3.png"/>
+            <img id="parallax1" class="graphics" style="top:3300px; left: 600px;" src="/images/star2.png"/>
+            <img id="parallax1" class="graphics" style="top:4300px; left: 200px" src="/images/star3.png"/>
         </div>
-        <div class="Projects">
-          <div class="Proj">
-            <h2 class="Name">Neon Bounce</h2>
-            <h4 class="Desc">
-              First ever game programming experience. A 2D rhythm platformer
-              game written on C++ (University of Breda Template) as Breda
-              University Intake project Has one 3-minute level with simple
-              collision detection, checkpoints, difficulty choice and
-              postprocessing effects.
-            </h4>
-            <div class="Showcase">
-              <div class="ProjectContent">
-                <img class="Image" src="/images/Neon Bounce.png" />
-              </div>
-              <div class="Tasks">
-                <div class="Justification">
-                  <h3>Challenges</h3>
-                  <div class="Remark">
-                    What were my main tasks and how hard it was to overcome them
-                  </div>
-                </div>
-                <div class="Challenge">
-                  <div class="ChallengeContent">
-                    <div class="ChallengeDesc">Level Design</div>
-                    <div class="ChallengeBar" id="hard">
-                      <div class="BarName">Hard</div>
-                      <div class="Bar"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="Challenge">
-                  <div class="ChallengeContent">
-                    <div class="ChallengeDesc">Framework programming</div>
-                    <div class="ChallengeBar" id="medium">
-                      <div class="BarName">Medium</div>
-                      <div class="Bar"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="Challenge">
-                  <div class="ChallengeContent">
-                    <div class="ChallengeDesc">Gameplay programming</div>
-                    <div class="ChallengeBar" id="easy">
-                      <div class="BarName">Easy</div>
-                      <div class="Bar"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="Proj">
-            <h2 class="Name">Space Trip</h2>
-            <h4 class="Desc">
-              First group project experience in game development. A point and
-              click / puzzle game made in Processing playable in 5 mins. Has
-              inventory system, cutscenes, and a couple of puzzles.
-            </h4>
-            <div class="Showcase">
-              <div class="ProjectContent">
-                <img class="Image" src="/images/Space Trip.png" />
-              </div>
-              <div class="Tasks">
-                <div class="Justification">
-                  <h3>Challenges</h3>
-                  <p class="Remark">
-                    What were my main tasks and how hard it was to overcome them
-                  </p>
-                </div>
-                <div class="Challenge">
-                  <div class="ChallengeContent">
-                    <div class="ChallengeDesc">Framework programming</div>
-                    <div class="ChallengeBar" id="hard">
-                      <div class="BarName">Hard</div>
-                      <div class="Bar"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="Challenge">
-                  <div class="ChallengeContent">
-                    <div class="ChallengeDesc">Puzzle Design</div>
-                    <div class="ChallengeBar" id="medium">
-                      <div class="BarName">Medium</div>
-                      <div class="Bar"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="Challenge">
-                  <div class="ChallengeContent">
-                    <div class="ChallengeDesc">Gameplay programming</div>
-                    <div class="ChallengeBar" id="easy">
-                      <div class="BarName">Easy</div>
-                      <div class="Bar"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="Proj">
-            <h2 class="Name">Unnamed Jellyfish Game</h2>
-            <h4 class="Desc">
-              A solo project, made in C# using GXP Engine (Saxion University's
-              2D engine). A simple arcade game with coins and highscore. You
-              control a jellyfish and has to maneuver through the scrolling down
-              map and avoid spikes and fireballs. The map is infinite and
-              randomly generated (using perlin noise) with 2 generation types
-              and different structures.
-            </h4>
-            <div class="Showcase">
-              <div class="ProjectContent">
-                <img class="Image" src="/images/Unnamed Jellyfish Game.png" />
-              </div>
-              <div class="Tasks">
-                <div class="Justification">
-                  <h3>Challenges</h3>
-                  <p class="Remark">
-                    What were my main tasks and how hard it was to overcome them
-                  </p>
-                </div>
-                <div class="Challenge">
-                  <div class="ChallengeContent">
-                    <div class="ChallengeDesc">Procedural generation</div>
-                    <div class="ChallengeBar" id="extreme">
-                      <div class="BarName">Extreme</div>
-                      <div class="Bar"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="Challenge">
-                  <div class="ChallengeContent">
-                    <div class="ChallengeDesc">Gameplay programming</div>
-                    <div class="ChallengeBar" id="medium">
-                      <div class="BarName">Medium</div>
-                      <div class="Bar"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="Challenge">
-                  <div class="ChallengeContent">
-                    <div class="ChallengeDesc">
-                      Advanced particle system (used in later projects)
-                    </div>
-                    <div class="ChallengeBar" id="easy">
-                      <div class="BarName">Easy</div>
-                      <div class="Bar"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="Proj">
-            <h2 class="Name">Cheesekeeper</h2>
-            <h4 class="Desc">
-              A group project. An arcade game made in C# using GXP Engine
-              (Saxion University's 2D engine) fully operated by a custom
-              controller based on Arduino Nano 33 iot. Draw shapes in the air
-              using controller and defeat coming upcoming enemies with magic.
-              The game has advanced scoring system supported by visuals, has
-              ultimate abilities and a leaderboard
-            </h4>
-            <div class="Showcase">
-              <div class="ProjectContent">
-                <img class="Image" src="/images/Cheesekeeper.png" />
-              </div>
-              <div class="Tasks">
-                <div class="Justification">
-                  <h3>Challenges</h3>
-                  <p class="Remark">
-                    What were my main tasks and how hard it was to overcome them
-                  </p>
-                </div>
-                <div class="Challenge">
-                  <div class="ChallengeContent">
-                    <div class="ChallengeDesc">Controller programming</div>
-                    <div class="ChallengeBar" id="hard">
-                      <div class="BarName">Hard</div>
-                      <div class="Bar"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="Challenge">
-                  <div class="ChallengeContent">
-                    <div class="ChallengeDesc">Gameplay Programming</div>
-                    <div class="ChallengeBar" id="hard">
-                      <div class="BarName">Hard</div>
-                      <div class="Bar"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="Proj">
-            <h2 class="Name">Neodymium</h2>
-            <h4 class="Desc">
-              A group project made in C# using GXP Engine (Saxion University's
-              2D engine). A 3D physics based puzzle game. Control a crane to
-              grab and drop objects in order to create a path for a robot.
-              Engine was remade to support 3D. The game has a path following
-              robot, fully controllable crane and multiple physics powered
-              objects.
-            </h4>
-            <div class="Showcase">
-              <div class="ProjectContent">
-                <img class="Image" src="/images/Neodymium.png" />
-              </div>
-              <div class="Tasks">
-                <div class="Justification">
-                  <h3>Challenges</h3>
-                  <p class="Remark">
-                    What were my main tasks and how hard it was to overcome them
-                  </p>
-                </div>
-                <div class="Challenge">
-                  <div class="ChallengeContent">
-                    <div class="ChallengeDesc">3D Physics and collision programming</div>
-                    <div class="ChallengeBar" id="extreme">
-                      <div class="BarName">Extreme</div>
-                      <div class="Bar"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="Challenge">
-                  <div class="ChallengeContent">
-                    <div class="ChallengeDesc">UI/UX</div>
-                    <div class="ChallengeBar" id="medium">
-                      <div class="BarName">Medium</div>
-                      <div class="Bar"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="Challenge">
-                  <div class="ChallengeContent">
-                    <div class="ChallengeDesc">Graphics programming (partial contribution)</div>
-                    <div class="ChallengeBar" id="easy">
-                      <div class="BarName">Easy</div>
-                      <div class="Bar"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="Proj">
-            <h2 class="Name">
-              <a href="https://github.com/Tetroit/opeNgL/tree/demo/TetraEngine">
-                TetraEngine
-              </a>
-            </h2>
-            <h4 class="Desc">
-              A small game 3D game engine I made entirely from scratch in C++ using OpenGL. 
-              The engine has basic scene -> game object -> behaviour system and rendering with lights.
-            </h4>
-            <div class="Showcase">
-              <div class="ProjectContent">
-                <img class="Image" src="/images/tetra engine.gif" />
-              </div>
-              <div class="Tasks">
-                <div class="Justification">
-                  <h3>Challenges</h3>
-                  <p class="Remark">
-                    What were my main tasks and how hard it was to overcome them
-                  </p>
-                </div>
-                <div class="Challenge">
-                  <div class="ChallengeContent">
-                    <div class="ChallengeDesc">Code Architecture</div>
-                    <div class="ChallengeBar" id="extreme">
-                      <div class="BarName">Extreme</div>
-                      <div class="Bar"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="Challenge">
-                  <div class="ChallengeContent">
-                    <div class="ChallengeDesc">Rendering</div>
-                    <div class="ChallengeBar" id="hard">
-                      <div class="BarName">Hard</div>
-                      <div class="Bar"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="Challenge">
-                  <div class="ChallengeContent">
-                    <div class="ChallengeDesc">Game programming</div>
-                    <div class="ChallengeBar" id="easy">
-                      <div class="BarName">Easy</div>
-                      <div class="Bar"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="graphics-container" style="inset: 0; z-index: -2;">
+            <img id="parallax2" class="graphics" style="top:-200px; left: 500px;" src="/images/star3.png"/>
+            <img id="parallax2" class="graphics" style="top:100px; left: 200px;" src="/images/star1.png"/>
+            <img id="parallax2" class="graphics" style="top:300px; left: 1500px;" src="/images/star2.png"/>
+            <img id="parallax2" class="graphics" style="top:600px; left: 1000px;" src="/images/star3.png"/>
+            <img id="parallax2" class="graphics" style="top:700px; left: 200px;" src="/images/star1.png"/>
+            <img id="parallax2" class="graphics" style="top:1100px; left: 400px;" src="/images/star1.png"/>
+            <img id="parallax2" class="graphics" style="top:1300px; left: 700px;" src="/images/star2.png"/>
+            <img id="parallax2" class="graphics" style="top:1600px; left: 1200px;" src="/images/star3.png"/>
         </div>
-      </div>
-    </div>
-    <div class="Back" onclick="back()">
-      <script>
-        function back() {
-          window.location = "index.html";
+        <div id = "chain" class="loopingImg">
+            <img src="images/chainGlow.png" class="chainGlow">
+            <img src="images/chainGlow.png" class="chainGlow">
+            <img src="images/chainGlow.png" class="chainGlow">
+            <img src="images/chainGlow.png" class="chainGlow">
+            <img src="images/chainGlow.png" class="chainGlow">
+            <img src="images/chainGlow.png" class="chainGlow">
+            <img src="images/chainGlow.png" class="chainGlow">
+        </div>
+        <div class = "back button" onclick="openTab('index.html')">
+            Back
+        </div>
+        <main class="main-journey">
+
+            <div class="project">
+                <h1>Tetra Engine</h1>
+                <h2 class="date">May 2024 - present</h2>
+                <h3 class="comment">Solo project, made in C++ with OpenGL</h3>
+                <div class = "description">
+                    
+                    <div class = projImg>
+                        <img class="outline" src="/images/tetra engine.gif">
+                    </div>
+                    <div>
+                        <p>
+                            A 3D rendering engine I made entirely from scratch in <span class="emphasis">C++</span> using <span class="emphasis">OpenGL</span>.
+                            The engine has:
+                        </p>
+                        
+                        <ul style="display: block; margin: 10px; text-wrap-mode: wrap;">
+
+                            <li>Blinn-Phong lighting model</li>
+                            <li>Multiple objects, directional lights, point lights in the scene</li>
+                            <li>Materials with albedo, normal maps, smoothness and specular</li>
+                            <li>Skybox reflections</li>
+                            <li>Wavefront .obj file model import</li>
+                            <li>Listener-based event system</li>
+                            <li>Simple scriptable game object behavior workflow</li>
+                            <li>Input system (a wrapper for GLFW)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <h1>Procedural village</h1>
+                <h2 class="date">March 2024 - May 2024</h2>
+                <h3 class="comment">Solo project, made with Unity v6 URP in 2 months</h3>
+                <div class = "description">
+                    
+                    <div class = projImg>
+                        <video class="outline lazy-video" src="/images/Procedural village.mp4" autoplay loop controls>
+                    </div>
+                    <div>
+                        <p>
+                            A fully <span class="emphasis">procedurally generated</span> village with houses roads and details made in <span class="emphasis">Unity</span>.
+                            The program runs with a single editor button, has a lot of features and customization, such as:
+                        </p>
+                        <ul>
+                            <li>randomly oriented house areas</li>
+                            <li>automatic terrain alphamap road paint</li>
+                            <li>procedurally generated houses with voxel architecture</li>
+                            <li>terrain height accommodation</li>
+                            <li>detail placement</li>
+                            <li>spline tool for easy custom wooden bridges</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <h1>Ghost Box</h1>
+                <h2 class="date">March 2024</h2>
+                <h3 class="comment">Group project, multidisciplinary 7-member team, made with Unity v5 URP in 3 weeks</h3>
+                <div class = "description">
+                    
+                    <div class = projImg>
+                        <video class="outline lazy-video" src="/images/Ghost box.mp4" autoplay loop controls>
+                    </div>
+                    <p>
+                        An <span class="emphasis">Android</span> puzzle game made in <span class="emphasis">Unity</span> 
+                        that uses <span class="emphasis">mobile sensors</span>: light sensor, gyroscope, and accelerometer. 
+                        Players have to solve puzzles on the box by tapping, dragging or tilting the phone. If they make real environment dark, 
+                        the box will also switch to dark mode revealing the clues! If the player stay too long in the dark the ghost consumes them 
+                        and they lose.<br>
+                        During the project I created night mode shaders using <span class="emphasis">Shader Graph</span> and custom <span class="emphasis">HLSL</span> functions 
+                        as well as a set of custom postprocessing effect for better ambience as well as
+                        <span class="emphasis">reading sensor input</span> from the device and light sensor calibration sequence.
+                    </p>
+                </div>
+            </div>
+            <div class="project">
+                <h1>Memory lane</h1>
+                <h2 class="date">September 2024</h2>
+                <h3 class="comment">Group project, multidisciplinary 7-member team, made with Unity v5 URP in 3 weeks</h3>
+                <div class = "description">
+                    <div class = projImg>
+                        <video class="outline lazy-video" src="/images/Memory lane.mp4" autoplay loop controls>
+                    </div>
+                    <div>
+                        <p>
+                            A short (5-minute) 3D first-person narrative game about Alzheimer’s disease. Consists of a single questline and dialogue sequences.
+                            I have implemented:
+                        </p>
+                        <ul style = "display: block; margin: 10px; text-wrap-mode: wrap;">
+                            <li>
+                                a custom <span class="emphasis">lit shader</span> made in Unity Shader Graph</span> 
+                                that fits the theme: distance based fragmented grayscale filter, supports shadows
+                            </li>
+                            <li> <span class="emphasis">postprocessing shaders</span> to enhance the game feel: distance based blur, colored white noise</li>
+                            <li>a custom first person physics based <span class="emphasis">3d controller</span> with normal, slope and ground detection</li>
+                        </ul>
+                        <p>Shaders were created using <span class="emphasis">Unity Shader Graph</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <h1>Neodymium</h1>
+                <h2 class="date">April 2024 - May 2024</h2>
+                <h3 class="comment">Group project, multidisciplinary 6-member team, made in GXP Engine</h3>
+                <div class = "description">
+                    
+                    <div class = projImg>
+                        <video class="outline lazy-video" src="/images/Neodymium.mp4" autoplay loop controls>
+                    </div>
+                    <p>
+                        A group project made in <span class="emphasis">C#</span> using <span class="emphasis">GXP Engine</span>. 
+                        <span class="comment" style="text-wrap-mode:wrap;">GXP Engine is CMGT's C# code-only 2D engine, intentionally oversimplified, 
+                        so that students build tools and expand it themselves.</span> 
+                        It is a <span class="emphasis">3D</span> physics based puzzle game. Me and my colleague reworked the engine to support 3D. This took about 1 month of extra preparation.
+                        My task was making <span class="emphasis">collision detection</span> and <span class="emphasis">rigid body physics</span> in 3D, this included:
+                        OBB vs OBB collision resolution, particles, force fields, constraints, friction, air resistance and damping. Though, rotation was constraint.
+                        Player controls a crane to grab and drop objects in order to create a path for a robot.
+                        Engine was remade to support 3D. The game has a path following
+                        robot, fully controllable crane and multiple rigid bodies.
+                    </p>
+                </div>
+            </div>
+            <div class="project">
+                <h1>Unnamed Jellyfish Game</h1>
+                <h2 class="date">February 2024 - March 2024</h2>
+                <h3 class="comment">Group project, multidisciplinary 6-member team, made in GXP Engine</h3>
+                <div class = "description">
+                    
+                    <div class = projImg>
+                        <video class="outline lazy-video" src="/images/Unnamed Jellyfish Game.mp4" autoplay loop controls>
+                    </div>
+                    <p>
+                        A solo project, made in <span class="emphasis">C#</span> using <span class="emphasis">GXP Engine</span>.
+                        <span class="comment" style="text-wrap-mode:wrap;">GXP Engine is CMGT's C# code-only 2D engine, intentionally oversimplified, 
+                        so that students build tools and expand it themselves.</span> 
+                        A simple arcade game with coins and highscore. You
+                        control a jellyfish and has to maneuver through the scrolling down
+                        map and avoid spikes and fireballs. I focused on the <span class="emphasis">procedural map generation</span> here. The map is infinite and
+                        procedurally generated using perlin noise with 2 generation algorithms
+                        and different structures.
+                    </p>
+                </div>
+            </div>
+            <div class="project">
+                <h1>Cheesekeeper</h1>
+                <h2 class="date">February 2024 - March 2024</h2>
+                <h3 class="comment">Group project, multidisciplinary 6-member team, made in GXP Engine</h3>
+                <div class = "description">
+                    
+                    <div class = projImg>
+                        <video class="outline lazy-video" src="/images/Cheesekeeper.mp4" autoplay loop controls>
+                            <source src="/images/Cheesekeeper.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <p style="font-size: 20px;">
+                        An arcade game made in <span class="emphasis">C#</span> using <span class="emphasis">GXP Engine</span>
+                        (Saxion University's 2D engine) fully operated by a <span class="emphasis">custom
+                        controller</span> based on Arduino Nano 33 iot. The project was done in 3 weeks.
+                        <span class="comment" style="text-wrap-mode:wrap;">GXP Engine is CMGT's C# code-only 2D engine, intentionally oversimplified, 
+                        so that students build tools and expand it themselves.</span>
+                        Players draw shapes in the air
+                        using the controller and defeat approaching enemies with magic on each of 3 lanes.
+                        I implemented multiple <span class="emphasis">parallax layers</span>, 
+                        advanced <span class="emphasis">scoring system</span> with multipliers, a <span class="emphasis">leaderboard</span>, and special spells. 
+                        I was also responsible for programming the controller on <span class="emphasis">Arduino IDE</span> side and setting communication via COM port.
+                        The controller tracks stick acceleration, which occurs naturally when players swing the controller
+                        and is able to recognize 8 directions.
+                    </p>
+                </div>
+            </div>
+            <div class="project">
+                <h1>Space trip</h1>
+                <h2 class="date">December 2023</h2>
+                <h3 class="comment">Group project, multidisciplinary 6-member team, made in Processing</h3>
+                <div class = "description">
+                    
+                    <div class = projImg>
+                        <video class="outline lazy-video" src="/images/Space trip.mp4" autoplay loop controls>
+                    </div>
+                    <p>
+                        First group experience in game development. A point and
+                        click puzzle game made in <span class="emphasis">Processing</span>, made in 2 weeks, playable in 5 mins. I was responsible for
+                        inventory system, particle system, async asset loading, 3 puzzles and wobble postprocessing effect (made with shaders).
+                    </p>
+                </div>
+            </div>
+            <div class="project">
+                <h1>Neon Bounce</h1>
+                <h2 class="date">May 2023</h2>
+                <h3 class="comment">Solo project, using Breda University's C++ tmpl8</h3>
+                <div class = "description">
+                    
+                    <div class = projImg>
+                        <video class="outline lazy-video" src="/images/Neon bounce.mp4" autoplay loop controls>
+                    </div>
+                    <p>
+                        First ever game programming experience. A 2D rhythm platformer
+                        game written in <span class="emphasis">C++</span> (University of Breda Template) as Breda
+                        University Intake project. The game was inspired by Geometry Dash but you bounce between 2 walls instead of moving forward. 
+                        The game has one 3-minute level with simple
+                        collision detection, checkpoints, gravity change, difficulty choice and
+                        screen transform postprocessing effects with no shaders involved. Nearly 1 month was spent on this project.
+                    </p>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script>
+    var header = document.getElementById("title");
+
+    var projs = document.getElementsByClassName("project");
+    var glows = document.getElementsByClassName("chainGlow");
+    const background = document.querySelector('.graphics-container');
+    const chain = document.querySelector('#chain');
+    
+    function setSidebarHeight() {
+        
+      chain.style.height = `0px`;
+      const docHeight = Math.max(0,
+        document.documentElement.scrollHeight
+      );
+      chain.style.height = `${docHeight}px`;
+      background.style.height = `${docHeight}px`;
+    }
+
+    window.addEventListener('load', setSidebarHeight);
+    window.addEventListener('resize', setSidebarHeight);
+
+    function fadeOutOnScroll(element) {
+        if (!element) {return;}
+
+        var distanceToTop = element.getBoundingClientRect().top;
+        var distanceToBottom = window.innerHeight - element.getBoundingClientRect().bottom;
+        var elementHeight = element.offsetHeight;
+        var scrollTop = document.documentElement.scrollTop;
+
+        var opacityBottom = Math.min(Math.max((distanceToBottom + elementHeight * 0.7) / elementHeight * 2, 0),1);
+        var opacityTop = Math.min(Math.max((distanceToTop + elementHeight * 0.7) / elementHeight * 2, 0),1);
+        var opacity = opacityBottom * opacityTop;
+
+        if (opacity < 0) {
+            element.style.opacity = 0;
+        } 
+        else if (opacity > 1) {
+            element.style.opacity = 1;
+        } 
+        else {
+            element.style.opacity = opacity;
+            element.style.transform = "translateZ(" + opacity * 100 + "px)";
+            element.style.scale = 0.8 + 0.2 * easeOutCubic(opacity);
         }
-      </script>
-      <h2><- Back</h2>
-    </div>
-  </body>
+    }
+    function fadeOutOnScrollChain(element) {
+        if (!element) {
+            return;
+        }
+
+        var distanceToTop = element.getBoundingClientRect().top;
+        var distanceToBottom = window.innerHeight - element.getBoundingClientRect().bottom;
+        var elementHeight = element.offsetHeight;
+        var scrollTop = document.documentElement.scrollTop;
+
+        var opacityBottom = Math.min(Math.max((distanceToBottom + elementHeight * 1.5) / elementHeight * 0.5, 0),1);
+        var opacityTop = Math.min(Math.max((distanceToTop + elementHeight * 1.5) / elementHeight * 0.5, 0),1);
+
+        var opacity = opacityBottom * opacityTop;
+
+        if (opacity < 0) {
+            element.style.opacity = 0;
+        } 
+        else if (opacity > 1) {
+            element.style.opacity = 1;
+        } 
+        else {
+            element.style.opacity = easeInQuart(opacity);
+        }
+    }
+
+    function scrollHandler() {
+        fadeOutOnScroll(header);
+        Array.prototype.filter.call(projs, (element) => fadeOutOnScroll(element));
+        Array.prototype.filter.call(glows, (element) => fadeOutOnScrollChain(element));
+    }
+
+    function parallaxScroll(){
+        var parallax1 = document.querySelectorAll('#parallax1');
+        var parallax2 = document.querySelectorAll('#parallax2');
+        var parallax3 = document.querySelectorAll('#parallax3');
+        parallaxLayer(0.5, parallax1);
+        parallaxLayer(0.8, parallax2);
+        parallaxLayer(0.9, parallax3);
+        requestAnimationFrame(parallaxScroll);
+    }
+    function parallaxLayer(fac, objects){
+        objects.forEach(el => el.style.transform = `translateY(${Math.round(window.scrollY * -(1-fac))}px)`);
+    }
+    requestAnimationFrame(parallaxScroll);
+
+    window.onload = function () {
+        scrollHandler();
+        document.querySelectorAll('.lazy-video').forEach(v => {
+            v.dataset.wasPlaying = "true";
+            v.dataset.onScreen = "false";
+        })
+    };
+    function easeOutCubic(x) {
+        return 1 - Math.pow(1 - x, 3);
+    }
+    function easeInQuart(x) {
+        return x * x * x * x;
+    }
+    window.addEventListener("scroll", scrollHandler);
+    window.addEventListener('resize', scrollHandler);
+
+    // One observer for the whole page
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+        const vid = entry.target;
+
+        if (entry.isIntersecting) {
+            if ((vid.dataset.onScreen === "false") && vid.paused && vid.dataset.wasPlaying === "true"){
+                vid.play();
+            }
+            vid.dataset.onScreen = true;
+        } else {
+            if (vid.dataset.onScreen && vid.dataset){
+                vid.dataset.wasPlaying = !vid.paused;
+                vid.pause();
+            }
+            vid.dataset.onScreen = false;
+        }
+        });
+    }, 
+    { threshold: 0.5 });
+
+    // Attach observer to every video we care about
+    document.querySelectorAll('.lazy-video').forEach(v => observer.observe(v));
+    function openTab(tab) {
+        window.location = tab;
+    }
+    </script>
 </html>
-
-<script>
-  var header = document.getElementById("Title");
-
-  var projs = document.getElementsByClassName("Proj");
-  var glows = document.getElementsByClassName("ChainGlow");
-
-  function fadeOutOnScroll(element) {
-    if (!element) {
-      return;
-    }
-
-    var distanceToTop = element.getBoundingClientRect().top;
-    var distanceToBottom =
-      window.innerHeight - element.getBoundingClientRect().top;
-    var elementHeight = element.offsetHeight;
-    var scrollTop = document.documentElement.scrollTop;
-
-    var opacityBottom = Math.min(
-      Math.max((distanceToBottom - elementHeight / 2) / elementHeight, 0),
-      1
-    );
-    var opacityTop = Math.min(
-      Math.max((distanceToTop + elementHeight) / elementHeight, 0),
-      1
-    );
-    var opacity = opacityBottom * opacityTop;
-
-    if (opacity < 0) {
-      element.style.opacity = 0;
-    } else if (opacity > 1) {
-      element.style.opacity = 1;
-    } else {
-      element.style.opacity = opacity;
-      element.style.transform = "translateZ(" + opacity * 100 + "px)";
-      element.style.scale = 0.8 + 0.2 * easeOutCubic(opacity);
-    }
-  }
-  function fadeOutOnScrollChain(element) {
-    if (!element) {
-      return;
-    }
-
-    var distanceToTop = element.getBoundingClientRect().top;
-    var distanceToBottom =
-      window.innerHeight - element.getBoundingClientRect().top;
-    var elementHeight = element.offsetHeight;
-    var scrollTop = document.documentElement.scrollTop;
-
-    var opacityBottom = Math.min(
-      Math.max(distanceToBottom / elementHeight / 2, 0),
-      1
-    );
-    var opacityTop = Math.min(
-      Math.max((distanceToTop + elementHeight) / elementHeight, 0),
-      1
-    );
-    var opacity = opacityBottom * opacityTop;
-
-    if (opacity < 0) {
-      element.style.opacity = 0;
-    } else if (opacity > 1) {
-      element.style.opacity = 1;
-    } else {
-      element.style.opacity = easeInQuart(opacity);
-    }
-  }
-
-  function scrollHandler() {
-    fadeOutOnScroll(header);
-
-    Array.prototype.filter.call(projs, (element) => fadeOutOnScroll(element));
-    Array.prototype.filter.call(glows, (element) =>
-      fadeOutOnScrollChain(element)
-    );
-  }
-  window.onload = function () {
-    scrollHandler();
-  };
-  function easeOutCubic(x) {
-    return 1 - Math.pow(1 - x, 3);
-  }
-  function easeInQuart(x) {
-    return x * x * x * x;
-  }
-  window.addEventListener("scroll", scrollHandler);
-</script>
-
-
-
-
-<!--
-
-LEGACY
-
-<div class="Proj">
-  <h2 class="Name">TetraTetra</h2>
-  <h4 class="Desc">
-    A solo project. A small physics engine built on the top of the GXP Engine (Saxion University's 2D engine). Has constraints and multiple collider types.
-  </h4>
-  <div class="Showcase">
-    <div class="ProjectContent">
-      <img class="Image" src="/images/TetraTetra.png"/>
-    </div>
-    <div class="Tasks">
-      <div class="Justification">
-        <h3>Challenges</h3>
-        <p class="Remark">
-          What were my main tasks and how hard it was to overcome them
-        </p>
-      </div>
-      <div class="Challenge">
-        <div class="ChallengeContent">
-          <div class="ChallengeDesc">2D Physics programming</div>
-          <div class="ChallengeBar" id="hard">
-            <div class="BarName">Hard</div>
-            <div class="Bar"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> 
--->

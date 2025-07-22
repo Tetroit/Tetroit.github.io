@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="159.30592mm"
+   height="159.30591mm"
+   viewBox="0 0 159.30592 159.30591"
+   version="1.1"
+   id="svg1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient373">
+      <stop
+         style="stop-color:#d51c1c;stop-opacity:1;"
+         offset="0"
+         id="stop373" />
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="1"
+         id="stop374" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient373"
+       id="linearGradient374"
+       x1="106.03204"
+       y1="60.699379"
+       x2="76.947983"
+       y2="39.236"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-16.868388,-29.701615)">
+    <path
+       style="fill:none;fill-opacity:1;stroke:url(#linearGradient374);stroke-width:3.165;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+       d="M 79.827222,77.86166 88.815773,31.28385 110.25862,65.18632 92.070096,56.798398 Z"
+       id="path340" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path340"
+       id="use362" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path340"
+       transform="rotate(30,96.521345,109.35457)"
+       id="use363" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path340"
+       transform="rotate(60,96.521345,109.35457)"
+       id="use364" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path340"
+       transform="rotate(90,96.521345,109.35457)"
+       id="use365" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path340"
+       transform="rotate(120,96.521345,109.35457)"
+       id="use366" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path340"
+       transform="rotate(150,96.521345,109.35457)"
+       id="use367" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path340"
+       transform="rotate(180,96.521345,109.35457)"
+       id="use368" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path340"
+       transform="rotate(-150,96.521345,109.35457)"
+       id="use369" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path340"
+       transform="rotate(-120,96.521345,109.35457)"
+       id="use370" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path340"
+       transform="rotate(-90,96.521345,109.35457)"
+       id="use371" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path340"
+       transform="rotate(-60,96.521345,109.35457)"
+       id="use372" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path340"
+       transform="rotate(-30,96.521345,109.35457)"
+       id="use373" />
+  </g>
+</svg>
