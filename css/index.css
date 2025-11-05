@@ -134,6 +134,9 @@ a:active {
 .small-link:active {
     text-decoration: none;
 }
+.small-link * {
+  color: inherit;
+}
 
 .emphasis{
     font-weight: 900;
