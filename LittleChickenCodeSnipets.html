@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="description" content="Ivan Shychynov Personal Portfolio" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ivan Shychynov Personal Portfolio</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body style="padding: 20px;">
+    <div class="background" style="z-index: -10;"></div>
+    <div style = "position: absolute;"><svg width = "150" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.29 38.16">
+        <path
+            d="M.63 38a.58.58 0 0 1-.35-.4.29.29 0 0 1 .28-.29.57.57 0 0 1 .3.13.91.91 0 0 0 .54.17.76.76 0 0 0 .79-.86v-.45a1 1 0 0 1-.87.38 1.11 1.11 0 0 1-.8-.3A1.83 1.83 0 0 1 .14 35a1.83 1.83 0 0 1 .38-1.37 1.13 1.13 0 0 1 .81-.29 1 1 0 0 1 .87.38.38.38 0 0 1 .06-.23.35.35 0 0 1 .55 0 .53.53 0 0 1 .06.32v2.9a1.35 1.35 0 0 1-1.44 1.42 1.53 1.53 0 0 1-.8-.13m.88-4c-.61 0-.69.49-.69 1s.08 1.05.69 1.05.68-.52.68-1.05-.07-1-.68-1m10.37.8h.89v-.21a.59.59 0 0 0-.7-.66 1 1 0 0 0-.64.23.41.41 0 0 1-.25.09.26.26 0 0 1-.18-.09.28.28 0 0 1-.09-.16.52.52 0 0 1 .32-.39 1.64 1.64 0 0 1 .86-.2 1.14 1.14 0 0 1 1.38 1.16v1.81a.54.54 0 0 1 0 .3.32.32 0 0 1-.29.16.33.33 0 0 1-.25-.1.35.35 0 0 1-.08-.24 1.12 1.12 0 0 1-.9.35 1.17 1.17 0 0 1-.9-.31 1 1 0 0 1-.27-.72 1 1 0 0 1 1.16-1m.06 1.42a.8.8 0 0 0 .63-.24.64.64 0 0 0 .15-.5v-.22H12a.49.49 0 0 0-.6.48c0 .3.21.47.63.47m13.02.1a.58.58 0 0 1-.05.3.34.34 0 0 1-.58 0 .59.59 0 0 1 0-.3v-1.62a.65.65 0 0 0-.72-.71.66.66 0 0 0-.7.71v1.65a.59.59 0 0 1 0 .3.34.34 0 0 1-.58 0 .59.59 0 0 1 0-.3v-1.65a.65.65 0 0 0-.77-.71.66.66 0 0 0-.7.74v1.61a.59.59 0 0 1 0 .3.34.34 0 0 1-.58 0 .57.57 0 0 1-.05-.3v-2.51a.53.53 0 0 1 .06-.32.33.33 0 0 1 .28-.14.33.33 0 0 1 .28.13.39.39 0 0 1 .06.22 1.22 1.22 0 0 1 .89-.37 1.07 1.07 0 0 1 1 .49 1.28 1.28 0 0 1 1.05-.49 1.22 1.22 0 0 1 .85.3 1.25 1.25 0 0 1 .36.95v1.71zm8.2-2.97a1.41 1.41 0 0 1 1.42 1.53.4.4 0 0 1-.09.3.39.39 0 0 1-.3.09h-1.79a.83.83 0 0 0 .86.95A1 1 0 0 0 34 36a.44.44 0 0 1 .27-.12.3.3 0 0 1 .28.29.61.61 0 0 1-.34.41 1.61 1.61 0 0 1-.88.22 1.45 1.45 0 0 1-1.51-1.72 1.46 1.46 0 0 1 1.43-1.72m.66 1a.73.73 0 0 0-1.33 0 1.05 1.05 0 0 0-.09.46H34a1.14 1.14 0 0 0-.09-.46m11.47-1a1.25 1.25 0 0 1 .74.21.55.55 0 0 1 .33.4.32.32 0 0 1-.1.22.31.31 0 0 1-.21.09.41.41 0 0 1-.27-.13.71.71 0 0 0-.49-.15.72.72 0 0 0-.61.29 1.77 1.77 0 0 0 0 1.64.72.72 0 0 0 .61.29.73.73 0 0 0 .49-.22.42.42 0 0 1 .27-.13.31.31 0 0 1 .21.09.31.31 0 0 1 .1.22.57.57 0 0 1-.33.4 1.27 1.27 0 0 1-.74.21 1.48 1.48 0 0 1-1.49-1.72 1.48 1.48 0 0 1 1.49-1.72m7.3.41a1.47 1.47 0 0 1 2 0 1.75 1.75 0 0 1 .39 1.32 1.76 1.76 0 0 1-.39 1.32 1.47 1.47 0 0 1-2 0 1.74 1.74 0 0 1-.39-1.32 1.73 1.73 0 0 1 .39-1.32m.51 2.24a.72.72 0 0 0 1 0 1.94 1.94 0 0 0 0-1.84.72.72 0 0 0-1 0 1.93 1.93 0 0 0 0 1.84m11.39.33a.59.59 0 0 1 0 .3.34.34 0 0 1-.58 0 .58.58 0 0 1-.05-.3v-1.62a.65.65 0 0 0-.72-.71.66.66 0 0 0-.7.71v1.65a.58.58 0 0 1 0 .3.34.34 0 0 1-.58 0 .57.57 0 0 1-.05-.3v-1.65a.65.65 0 0 0-.72-.71.66.66 0 0 0-.7.74v1.61a.58.58 0 0 1 0 .3.34.34 0 0 1-.58 0 .58.58 0 0 1 0-.3v-2.51a.53.53 0 0 1 .06-.32.35.35 0 0 1 .55 0 .38.38 0 0 1 .06.22 1.22 1.22 0 0 1 .89-.37 1.07 1.07 0 0 1 1 .49 1.28 1.28 0 0 1 1.05-.49 1.22 1.22 0 0 1 .85.3 1.25 1.25 0 0 1 .36.95v1.71zm4.76 1.35v-3.84a.53.53 0 0 1 .06-.32.35.35 0 0 1 .55 0 .4.4 0 0 1 .06.24 1 1 0 0 1 .88-.38 1.17 1.17 0 0 1 .82.3 2 2 0 0 1 .37 1.43 2 2 0 0 1-.37 1.42 1.15 1.15 0 0 1-.82.3 1 1 0 0 1-.89-.41v1.26a.59.59 0 0 1 0 .3.34.34 0 0 1-.58 0 .58.58 0 0 1 0-.3M70.71 34c-.61 0-.7.51-.7 1.11s.09 1.11.7 1.11.7-.52.7-1.11-.09-1.11-.7-1.11m8.29.8h.89v-.21a.59.59 0 0 0-.7-.66 1 1 0 0 0-.64.23.42.42 0 0 1-.25.09.26.26 0 0 1-.2-.09.28.28 0 0 1-.05-.16.52.52 0 0 1 .32-.39 1.64 1.64 0 0 1 .86-.2 1.14 1.14 0 0 1 1.38 1.16v1.81a.54.54 0 0 1 0 .3.32.32 0 0 1-.29.16.33.33 0 0 1-.24-.1.35.35 0 0 1-.08-.24 1.12 1.12 0 0 1-.9.35 1.17 1.17 0 0 1-.9-.31 1 1 0 0 1-.27-.72 1 1 0 0 1 1.16-1m.13 1.44a.8.8 0 0 0 .55-.26.64.64 0 0 0 .15-.5v-.22h-.8a.49.49 0 0 0-.6.48c0 .3.21.47.63.47m7.91.1a.59.59 0 0 1 0 .3.34.34 0 0 1-.58 0 .58.58 0 0 1-.05-.3v-2.49a.53.53 0 0 1 .06-.32.35.35 0 0 1 .55 0 .4.4 0 0 1 .06.22 1.2 1.2 0 0 1 .88-.37 1.16 1.16 0 0 1 .83.3 1.23 1.23 0 0 1 .34.95v1.71a.59.59 0 0 1 0 .3.34.34 0 0 1-.58 0 .59.59 0 0 1 0-.3v-1.62a.65.65 0 0 0-.81-.71.66.66 0 0 0-.7.74v1.61zm9.26 1.11a1 1 0 0 1-.25.42.9.9 0 0 1-.66.25.49.49 0 0 1-.31-.11.33.33 0 0 1 0-.47.32.32 0 0 1 .23-.06.42.42 0 0 0 .44-.36l.16-.49L95 33.9a.52.52 0 0 1 0-.32.34.34 0 0 1 .32-.2.35.35 0 0 1 .33.32l.66 2.06.68-2.06a.35.35 0 0 1 .33-.32.34.34 0 0 1 .32.2.5.5 0 0 1 0 .32zM74 14.4s8-9 8.53-10.06-.77-3.34-1.85-1.69-7.81 10.43-7.81 10.43S73.9 5 74 3.49s-2.15-.76-2.23.58S71 12.5 70.92 15a80.81 80.81 0 0 0 .56 11.45c.28 1.84 2.66-.44 2.37-1.26a33.88 33.88 0 0 1-1.17-9.47s9.05 9.45 9.74 10.1 3.93-.35 2.45-1.51c-2.51-2-7.67-6-10.84-9.91M50.61 25.28c.23.87 1.68 2.06 1.57-.68-.16-3.91.2-8.93.2-8.93l4.13-.83s-.09 1.39 0 3.92a80.78 80.78 0 0 0 .41 8.15c.24 1 1.59.23 1.52-2-.25-7.77.8-20.56.7-21.48-.12-1.14-2.23-2.25-2.22-.4s-.39 9.5-.39 9.5-3.54.67-4 .82c.19-3.08.91-9.31 1-9.91.15-1.56-2.26-.81-2.47.79s-.42 4.27-.51 6.21-.27 3.31-.27 7.5c-.03 5.29.13 6.59.33 7.34zM50.46 12l-.19 4.21m9.8 2.91c.17 2.53 1.43 3.47 1.43 2.21a104.53 104.53 0 0 1 1-13.08c.18-1-1.84-2.15-2.1-.58a96.54 96.54 0 0 0-.33 11.45z"
+            fill="#e06e38"></path>
+        <path
+            d="M89.19 10.94c.58 0 .62-1.45-.61-1.63A80.71 80.71 0 0 0 80 9.4c-.76.12-1.26 2.23-.18 2.15 1.7-.12 5.93-.55 9.37-.61zm7.26-2.01c-.28-1.24-2.5.35-2.19 1.5s.85 4 1.26 6.42a53.56 53.56 0 0 1-4.41-5c-.62-.83-2.46-.76-2.4.09a68.44 68.44 0 0 0 1.1 6.83c.32 1 2.17 1.39 2 .51s-.53-3-.7-4.46a30 30 0 0 0 4.6 5c.63.44 2.78 1.12 2.36-.75s-1.33-8.81-1.62-10.14zm-47.14 6.5c-.6.61-1.8 2.27-3 2.67a1.81 1.81 0 0 1-2.45-.89A4.34 4.34 0 0 1 45.77 12a2.85 2.85 0 0 1 2.49-.24c1 .37.76-1.46-1.73-2.63A1 1 0 0 0 45 10a6.44 6.44 0 0 0-2.79 8.13 3.3 3.3 0 0 0 3.68 2 5.46 5.46 0 0 0 3.51-2.83c.54-1.01.51-2.48-.09-1.87zm-13.72 7.32c-2.48-.33-8.21 1.55-8.21 1.55.26-7.53 2.2-19.51 2.23-20.62s-2.8-2.27-2.83-.31-1.84 22.36-1.39 23.16a1.33 1.33 0 0 0 2 .3c.6-.34 4.71-2.45 8.11-2.67 1.55-.11 1.5-1.23.09-1.41zM25 8.73c1.51-.37 1 .9.14 1.4a12 12 0 0 1-3.08 1c-.42 5.55-.19 8.83-.28 12.23 0 1-2 1.4-2.11-.07s.41-10.4.52-11.89a12.36 12.36 0 0 1-2.56.32c-.83 0-1.1-1.69 0-1.78A72 72 0 0 0 25 8.73z"
+            fill="#e06e38"></path>
+        <path
+            d="M16.11 26.16c.09 1.55-2.38 1-2.32-.7.23-6.39.12-12.26.74-18.8a51.55 51.55 0 0 0-5.18.77 1.32 1.32 0 1 1 0-2.6c2.42-.09 12.64-1.24 14.07-1.4s.38 1.7-.61 2-4.22.81-6.27 1.14a135.73 135.73 0 0 0-.38 19.63"
+            fill="#e06e38"></path>
+        <path
+            d="M11.35 11.45a77.84 77.84 0 0 0-.59 8.3c0 .59-1.52 2.66-1.78-1.62a35.61 35.61 0 0 1 .08-7.43c.23-1.54 1.5-2.1 2.36-1.62.58.31.16 1.22-.07 2.37zm26.59-.73c1.27-.06 1.95-1.27.66-1.39a57 57 0 0 0-7.09-.18 1.08 1.08 0 0 0-1 1.18c0 .37-.37 7.94-.43 8.9s1.08.92 1.84.7a52.2 52.2 0 0 1 6.2-1c1.11-.1.39-1.45-.45-1.55a31.86 31.86 0 0 0-5.53.68c0-.6.15-2 .2-2.78 1.3 0 2.42 0 3.06-.07s1.34-1.68.78-1.8a36.65 36.65 0 0 0-3.72.08c0-1 .14-1.88.19-2.49 1.45-.21 4.02-.22 5.29-.28zM7.26 23.67a16.61 16.61 0 0 0-5.81 2.23A1 1 0 0 1 0 24.79C.44 17.13.93 8.3 1.33 5.48c.31-2.13 3.22-1.82 2.85-.21C3.57 8 2.35 19.34 2.16 23c1.16-.47 5.64-1.4 6.59-.63s-.44 1.08-1.49 1.3zm62.45-7.87c-.6.61-1.8 2.27-3 2.67a1.46 1.46 0 0 1-2.12-1.08c-.12-.75-.06-4 2.68-5.37 1.05-.51 1.2.79 2.22 1.16s1.74-2.67-1.1-4.45c-1-.6-2.12.27-1.63 1.09a7.88 7.88 0 0 0-3.86 8.51 2.82 2.82 0 0 0 3.35 2.15 5.46 5.46 0 0 0 3.51-2.81c.59-1.01.56-2.48-.05-1.87zm18.56 1.95c.57 0 .71 1.41-.51 1.67a61.64 61.64 0 0 1-7.3.6c-.77-.07-1.4-2.14-.32-2.13 1.69.01 4.69-.01 8.13-.14zm-.75-4.26c.68 0 1 1.66-.37 1.8s-6 .45-6.79.46c-1.12 0-1.4-2.14-.32-2.13 1.69.02 4.55-.13 7.48-.13z"
+            fill="#e06e38"></path>
+        <circle cx="125.8" cy="12.01" r="10.98" fill="#f8d448"></circle>
+        <path
+            d="M125.8 23.45a11.43 11.43 0 0 1 0-22.87A11.29 11.29 0 0 1 137 12a11.29 11.29 0 0 1-11.2 11.45zm0-22a10.53 10.53 0 0 0 0 21.05A10.42 10.42 0 0 0 136.19 12 10.43 10.43 0 0 0 125.8 1.49z">
+        </path>
+        <path
+            d="M113.43 35.38c.93-.15 1.83-.42 3.18-.75s4.19-1.27 4.19-1.27l-4.86.34c-.66 0-2.1.08-2.21.09a.89.89 0 0 1-1-.76.71.71 0 0 1 .84-.76 22.6 22.6 0 0 0 4.09.25 44.19 44.19 0 0 0 5.37-.28 19.73 19.73 0 0 0 1.19-4.84c.07-1.23-.08-4.59-.08-4.63h1c0 .17.15 3.44.07 4.73a31.26 31.26 0 0 1-1.21 5.64c-.24.42-1 1.07-3.3 3.64a3.31 3.31 0 0 1-1.19 1.11.85.85 0 0 1-1-.93 1.25 1.25 0 0 1 .65-.72 24.37 24.37 0 0 0 2.84-2.42l-3 1.27a35.18 35.18 0 0 1-5.23 2 1 1 0 0 1-1.06-1 .82.82 0 0 1 .72-.71zm26.09 0c-.93-.15-1.83-.42-3.18-.75s-4.19-1.27-4.19-1.27l4.85.34c.66 0 2.1.08 2.21.09a.89.89 0 0 0 1-.76.71.71 0 0 0-.84-.76 22.6 22.6 0 0 1-4.09.25 44.19 44.19 0 0 1-5.37-.28 19.7 19.7 0 0 1-1.19-4.84c-.07-1.23.08-4.59.08-4.63h-1c0 .17-.15 3.44-.07 4.73a31.28 31.28 0 0 0 1.23 5.67c.24.42 1 1.07 3.3 3.64a3.32 3.32 0 0 0 1.19 1.11.85.85 0 0 0 1-.93 1.25 1.25 0 0 0-.65-.72 24.33 24.33 0 0 1-2.86-2.42l3.06 1.24a35.18 35.18 0 0 0 5.23 2 1 1 0 0 0 1.06-1 .82.82 0 0 0-.77-.71z">
+        </path>
+        <path
+            d="M121.59 4.63l-.15.06-.13-.08a10.22 10.22 0 0 0-6-1.4c-.24 0-1.31-2.83-3-2.62 0 .68.47 1.34.61 2.52l.07.55-.6-.58a4.12 4.12 0 0 0-2.62-.78 5.36 5.36 0 0 1 1 2.09l.14.27-.26.14c-2.94 1.55-4.93 5.39-4.75 9.13a10.31 10.31 0 0 0 7.71 9.38h.16l.06.15a2.69 2.69 0 0 0 2.5 2h.19v-.2c0-.24-.11-1-.12-1.45v-.3h.42a7.28 7.28 0 0 0 1.7-.3h.16l.12.11c12.38-5.82 5.53-17.43 2.79-18.69z"
+            fill="#f8d448"></path>
+        <path d="M113.85 22.41s.11-.83.77-.39a9.29 9.29 0 0 1 1.52 1.48l.27 1.92-.64.18-1.23-.78-.38-1z" fill="#d7873d">
+        </path>
+        <path
+            d="M125.21 16.66c-.2 0-.52 1.45-1.63 2.74-1.85 2.17-5.4 3.68-7.42 3.49a1.07 1.07 0 0 0-.48 0 7.2 7.2 0 0 0 .24 2.1c-1.52-.12-2-3-2.09-3.15a1.1 1.1 0 0 0-.39.8 9.45 9.45 0 0 1-7.16-8.9c-.07-4 2.88-8.17 5.49-8.83a15.62 15.62 0 0 0-1.48-2.09c1.17-.12 2.75 1.62 3 1.6s.12-1.68-.54-3.26c1.57.42 2.34 2.73 2.34 2.73 7.58-1.22 10 6.9 10.24 6.88s-.21-2.1-.79-3.19c-1.28-2.41-3.79-4.93-8.89-4.68a4.66 4.66 0 0 0-4.23-2.9c-.39 0 .43.72.93 2.65-1.61-1-3.63-.6-3.63-.37s1 1 1.8 2.2c-3 1.59-5.18 5.55-5 9.43a10.57 10.57 0 0 0 7.94 9.66 3 3 0 0 0 2.77 2.18.86.86 0 0 0 .54-.15c.1-.21-.23-1.22-.22-1.81a9.88 9.88 0 0 0 8.27-5.14c.45-.97.6-1.98.39-1.99z">
+        </path>
+        <ellipse cx="109.96" cy="15.58" rx="3.32" ry="5.23" transform="rotate(-11.5 109.983 15.589)" fill="#fff">
+        </ellipse>
+        <path
+            d="M110.46 21.07c-1.8-.07-3.46-2.07-4.05-4.75a7.28 7.28 0 0 1 .23-4 3.15 3.15 0 0 1 2.22-2.16 2.53 2.53 0 0 1 .6 0c1.81.08 3.51 2.07 4.05 4.75.61 3-.49 5.74-2.45 6.14a2.45 2.45 0 0 1-.6.02zm-1-10.18a1.83 1.83 0 0 0-.45 0 2.22 2.22 0 0 0-1.63 1.65 6.81 6.81 0 0 0-.13 3.68c.48 2.37 1.8 3.91 3.31 4a1.87 1.87 0 0 0 .45 0c1.63-.33 2.27-2.43 1.73-5.09-.51-2.4-1.8-4.18-3.31-4.25z">
+        </path>
+        <path
+            d="M114.2 15a6.39 6.39 0 0 0 .33 1.71 4.25 4.25 0 0 0 5.19 3c2.19-.64 3.52-3.62 3.21-6.23a10.74 10.74 0 0 0-.93-2.58 10.6 10.6 0 0 0-4.7 1 7.13 7.13 0 0 0-3.1 3.1z"
+            fill="#fff"></path>
+        <path
+            d="M111.17 14.54a.46.46 0 0 0-.36.56l.2 1.37a.45.45 0 0 0 .48.41.42.42 0 0 0 .35-.52l-.17-1.42a.44.44 0 0 0-.5-.4zm4.76-.33a.47.47 0 0 0-.37.57l.21 1.4a.46.46 0 0 0 .49.42.43.43 0 0 0 .36-.53l-.18-1.45a.45.45 0 0 0-.51-.41z">
+        </path>
+        <path
+            d="M118.28 20.53c-2.64-.11-4.66-2.93-4.52-6.28s2.4-6 5-5.87 4.66 2.93 4.52 6.28-2.36 5.98-5 5.87zm.54-11.33c-2.3-.1-4.07 2.07-4.2 5.09s1.31 5.27 3.75 5.37 4-2 4.11-5-1.36-5.36-3.66-5.46z">
+        </path>
+        <path
+            d="M114.27 15.27a1.46 1.46 0 0 1-.28-.12.51.51 0 0 1 0-.57c2.61-4.67 7.58-4.4 8-4.12a.4.4 0 0 1 .28.32.3.3 0 0 1-.32.28c-.21 0-5.16-.17-7.64 4.11-.04.1.07.1-.04.1z">
+        </path>
+        <path
+            d="M113.82 14.57c-1.56-.16-1.54-5.16-1.13-6.67.13-.48.31-.61.47-.6s.15.35.14.52c-.24 2.86-.06 6.09.58 6.16a.3.3 0 0 1-.06.59zm5.02-6.4a9.21 9.21 0 0 0-1.54.47v.63c.5-.22.94-.38 1.86-.71a.7.7 0 0 0 .49-.33c-.08-.12-.28-.23-.81-.06zm13.29 9.2a2.58 2.58 0 0 0 1.58-.64 2.8 2.8 0 0 0 .9-1.8 2.22 2.22 0 0 0-1.72-2.52 1.59 1.59 0 0 0-1.77 1.59.49.49 0 0 0 .31.54c.22 0 .33-.18.36-.43a.92.92 0 0 1 1-.85 1.26 1.26 0 0 1 1 1.49 1.67 1.67 0 0 1-.57 1.13 1.44 1.44 0 0 1-1.17.37c-1.14-.16-1.77-1.05-1.81-2.42a4.57 4.57 0 0 1 1-3 2.33 2.33 0 0 1 1.9-.93c.28 0 .59 0 .61-.21a.62.62 0 0 0-.62-.43 2.87 2.87 0 0 0-2.45.94 5.06 5.06 0 0 0-1.41 3.72c.08 1.8 1.08 3.19 2.59 3.41z">
+        </path>
+    </svg></div>
+    <h2 style="margin-left: 170px;">Secret Tab for Little Chicken Game Company </h2>
+    <h3 style="margin-block: 20px;">
+        In this tab I will present 3 code snipets!
+    </h3>
+    <div style = "margin: 20px;">
+        <p style="margin-block: 20px; display: block;">1. Here is a terrain painter function from my Procedural Village project</p>
+        <p style="margin-block: 20px; display: block;">TerrainGenerator.cs</p>
+        <pre style="border: 2px solid #ffffff; border-radius: 3px; display: block; margin-block: 20px;"><code class="language-CSharp" id="csharp-code1"></code></pre>
+    </div>
+    <div style = "margin: 20px;">
+        <p style="margin-block: 20px; display: block;">2. Here is a physics based player controller I made for the group project "The Miller". It is a strategy for a more global PlayerFSM, as the game also has ladder controller. Other team members were introducing minor fixes, but this script was 90% written by me</p>
+        <p style="margin-block: 20px; display: block;">FreePlayerController.cs >>> <span><a href="https://github.com/Tetroit/Project-ShowOff/blob/main/Assets/Scripts/Player/FreePlayerController.cs" class = "small-link">See source!</a></span></p>
+        <pre style="border: 2px solid #ffffff; border-radius: 3px; display: block; margin-block: 20px;"><code class="language-CSharp" id="csharp-code2"></code></pre>
+    </div>
+    <div style = "margin: 20px;">
+        <p style="margin-block: 20px; display: block;">3. A small example of fully customizable event based quick time event script made for the group project "The Miller". Was used with Unity Timeline animations and DOTween tweens</p>
+        <p style="margin-block: 20px; display: block;">FreePlayerController.cs >>> <span><a href="https://github.com/Tetroit/Project-ShowOff/blob/main/Assets/Scripts/PlayableBehaviours/QuickTimeEvent.cs" class = "small-link">See source!</a></span></p>
+        <pre style="border: 2px solid #ffffff; border-radius: 3px; display: block; margin-block: 20px;"><code class="language-CSharp" id="csharp-code3"></code></pre>
+    </div>
+</body>
+<script>
+const code1 = 
+`
+using TetraUtils;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class TerrainGenerator : MonoBehaviour
+{
+    /// <summary>
+    /// Previous alphamaps info is stored in this array with
+    /// dimentions:
+    /// 0 - x,
+    /// 1 - y, 
+    /// 2 - splatmap weight,
+    /// as matches <seealso cref="TerrainData.GetAlphamaps"/> output
+    /// </summary>
+    float[,,] backup;
+    [SerializeField] int roadID = 0;
+    [SerializeField] float roadThreshold;
+    [SerializeField] float roadNarrowness = 1f;
+    [SerializeField] Terrain terrainContext;
+    [SerializeField] List<GameObject> details = new List<GameObject>();
+    public float detailRadius;
+    public Vector2 sizeRange;
+    public float treeDensity = 0;
+    public int treeSamples = 1000;
+    /// <summary>
+    /// Generated tree objects
+    /// </summary>
+    List<GameObject> generated = new List<GameObject>();
+
+    /// <summary>
+    /// village area in LOCAL space
+    /// </summary>
+    RectInt boundsContext = new RectInt();
+    /// <summary>
+    /// village area in GLOBAL space
+    /// </summary>
+    RectInt boundsContextGS = new RectInt();
+
+    /// <summary>
+    /// Size coefficient from world to alphamap
+    /// </summary>
+    Vector2 worldToAlphamap;
+    /// <summary>
+    /// Size coefficient from alphamap to world
+    /// </summary>
+    Vector2 alphamapToWorld;
+
+    float waterLevel;
+    /// <summary>
+    /// Transforms point world map space to terrain's alphamap space
+    /// </summary>
+    /// <param name="pos"></param>
+    /// <param name="ignoreBounds"></param>
+    /// <returns></returns>
+    public Vector2Int MapToAlphamap(Vector2 pos, bool ignoreBounds = false)
+    {
+        Vector2Int res = new Vector2Int((int)(pos.x * worldToAlphamap.x), (int)(pos.y * worldToAlphamap.y));
+        if (ignoreBounds)
+            return res;
+        return res - boundsContext.position;
+    }
+    /// <summary>
+    /// Transforms point terrain's alphamap space to map space
+    /// </summary>
+    /// <param name="pos"></param>
+    /// <param name="ignoreBounds"></param>
+    /// <returns></returns>
+    public Vector2 AlphamapToMap(Vector2Int pos, bool ignoreBounds = false)
+    {
+        if (ignoreBounds)
+            return pos * alphamapToWorld;
+        return (pos + boundsContext.position) * alphamapToWorld;
+    }
+    public Vector3 SamplePosOnAlphamap(Vector2Int p, bool inWorldsSpace = false) => 
+        SamplePosOnTerrain(AlphamapToMap(p), inWorldsSpace = false);
+    /// <summary>
+    /// Transforms point from terrain map to actual 3D coordinates, 
+    /// use <paramref name="inWorldSpace"/> to express in terrain object space or world space
+    /// </summary>
+    /// <param name="p"></param>
+    /// <param name="inWorldSpace"></param>
+    /// <returns></returns>
+    public Vector3 SamplePosOnTerrain(Vector2 p, bool inWorldSpace = false)
+    {
+        Vector3 global = transform.TransformPoint(GeometryUtils.MapToWorld(p));
+        Vector3 res = new Vector3(global.x, terrainContext.SampleHeight(global), global.z);
+        if (inWorldSpace)
+            return res;
+        return transform.InverseTransformPoint(res);
+
+    }
+    /// <summary>
+    /// Samples gradient from heightmap (dy/dx, dy/dz)
+    /// </summary>
+    /// <param name="pos"></param>
+    /// <returns></returns>
+    public Vector2 SampleGradient(Vector3 pos)
+    {
+        pos = transform.TransformPoint(pos);
+        var posNX = pos; posNX.x -= 0.5f;
+        var posNZ = pos; posNZ.z -= 0.5f;
+        var posPX = pos; posPX.x += 0.5f;
+        var posPZ = pos; posPZ.z += 0.5f;
+        var deltaY_x = terrainContext.SampleHeight(posPX) - terrainContext.SampleHeight(posNX);
+        var deltaY_z = terrainContext.SampleHeight(posPZ) - terrainContext.SampleHeight(posNZ);
+        //deltaX and deltaZ are 1 so we dont need to divide by deltaX and deltaZ
+        return new Vector2(deltaY_x, deltaY_z);
+    }
+    /// <summary>
+    /// Generates roads
+    /// </summary>
+    /// <param name="houses">Houses in LOCAL space </param>
+    /// <param name="terrain"></param>
+    /// <param name="bounds">Village area in LOCAL space</param>
+    /// <param name="waterLevel"></param>
+    public void GeneratePaths(List<HouseArea> houses, Terrain terrain, Rect bounds, float waterLevel)
+    {
+        this.waterLevel = waterLevel;
+        terrainContext = terrain;
+        TerrainData data = terrain.terrainData;
+
+        Debug.Log(data.alphamapWidth + " " + data.alphamapHeight);
+        Debug.Log(data.size);
+
+        worldToAlphamap = new Vector2(data.alphamapWidth, data.alphamapHeight) / new Vector2(data.size.x, data.size.z);
+        alphamapToWorld = Vector2.one/worldToAlphamap;
+
+        boundsContextGS = new RectInt(
+            MapToAlphamap(bounds.position + GeometryUtils.WorldToMap(transform.position), true),
+            MapToAlphamap(bounds.size, true));
+        boundsContext = new RectInt(
+            MapToAlphamap(bounds.position, true),
+            MapToAlphamap(bounds.size, true));
+        Debug.Log(boundsContext);
+
+        backup = data.GetAlphamaps(boundsContextGS.x, boundsContextGS.y, boundsContext.width, boundsContext.height);
+
+        if (GizmoManager.Instance != null)
+            GizmoManager.Instance.StageLine(
+                SamplePosOnAlphamap(Vector2Int.zero),
+                SamplePosOnAlphamap(new Vector2Int(backup.GetLength(1), backup.GetLength(0))), Color.yellow, transform);
+        DataUtils.CopyArray(backup, out float[,,] newMap);
+
+        //all magic happens outside of Hogwarts
+        PaintRoads(houses, ref newMap);
+        data.SetAlphamaps(boundsContextGS.x, boundsContextGS.y, newMap);
+
+        GenerateTrees(houses, bounds);
+    }
+    /// <summary>
+    /// Checks if the terrain at <paramref name="pos"/> below water lever
+    /// </summary>
+    /// <param name="pos"></param>
+    /// <param name="isLocalSpace"></param>
+    /// <returns></returns>
+    public bool IsWater(Vector2 pos)
+    {
+        float h = terrainContext.SampleHeight(transform.TransformPoint(GeometryUtils.MapToWorld(pos)));
+        if (h < waterLevel)
+            return true;
+        return false;
+    }
+    /// <summary>
+    /// Repaints terrain alpha map in road
+    /// </summary>
+    /// <param name="houses">Houses OBBs</param>
+    /// <param name="map">Alphamaps</param>
+    public void PaintRoads(List<HouseArea> houses, ref float[,,] map)
+    {
+        for (int i = 0; i < map.GetLength(0); i++)
+        {
+            for (int j = 0; j < map.GetLength(1); j++)
+            {
+                Vector2Int alphamapPos = new Vector2Int(j, i);
+
+                Vector2 pos = AlphamapToMap(alphamapPos);
+                if (IsWater(pos))
+                    continue;
+                float distance = GetDistanceInfo(houses, pos, out Vector2 c1, out Vector2 c2, out float second);
+
+                if (distance > roadThreshold)
+                {
+                    //don't paint road on high slopes
+                    Vector2 grad = SampleGradient(GeometryUtils.MapToWorld(pos));
+                    float maxSlope = grad.magnitude;
+                    float roadFac = Mathf.Abs(distance - second);
+                    float slopeFac = 1 - Mathf.Clamp01(maxSlope);
+                    //if (GizmoManager.Instance != null)
+                    //    GizmoManager.Instance.StagePoint(WorldmapToTerrain(pos), new Color(Mathf.Abs(grad.x), Mathf.Abs(grad.y), 0), 1f, transform);
+                    //should be road
+                    if (roadFac < roadNarrowness)
+                    {
+                        roadFac = (1 - (roadFac / roadNarrowness)) * slopeFac;
+                        if (GizmoManager.Instance != null) 
+                        {
+                            GizmoManager.Instance.StagePoint(SamplePosOnTerrain(pos), new Color(1 - slopeFac, roadFac, 0), 1f, transform);
+                        }
+                        SetRoad(new Vector2Int(i, j), ref map, roadFac);
+                    }
+                    //free area (for plants etc)
+                    else
+                    {
+                        if (GizmoManager.Instance != null)
+                        {
+                            GizmoManager.Instance.StagePoint(SamplePosOnTerrain(pos), new Color(1, slopeFac, 0), 1f, transform);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /// <summary>
+    /// Places trees taking into account roads and houses
+    /// </summary>
+    /// <param name="houses">Houses OBBs</param>
+    /// <param name="bounds">Generation area</param>
+    public void GenerateTrees(List<HouseArea> houses, Rect bounds)
+    {
+        for (int i=0; i<1000; i++)
+        {
+            Vector2 pos = GeometryUtils.Random2(bounds.min, bounds.max);
+            float distance = GetDistanceInfo(houses, pos, out Vector2 c1, out Vector2 c2, out float second);
+
+            if (IsWater(pos))
+                continue;
+
+            if (Mathf.Abs(distance - second) > roadNarrowness && distance > roadThreshold)
+            {
+                bool taken = false;
+                foreach (var tree in generated)
+                {
+                    if ((GeometryUtils.WorldToMap(tree.transform.localPosition) - pos).magnitude < detailRadius)
+                    {
+                        taken = true;
+                        break;
+                    }
+                }
+                if (taken) continue;
+
+                var fac = Random.value;
+                if (fac < treeDensity)
+                {
+                    var instance = Instantiate(DataUtils.PickRandom(details), transform);
+                    instance.transform.localPosition = SamplePosOnTerrain(pos);
+                    instance.transform.localScale = Vector3.one * Random.Range(sizeRange.x, sizeRange.y);
+                    instance.transform.rotation = Quaternion.Euler(0, Random.Range(0, 360), 0);
+                    generated.Add(instance);
+                }
+            }
+
+        }
+    }
+    /// <summary>
+    /// Resets alphamap for terrain, but saves previous changes
+    /// </summary>
+    public void ResetMaps()
+    {
+        GizmoManager.Instance.Clear(transform);
+        foreach (var child in generated)
+        {
+            DestroyImmediate(child);
+        }
+        generated.Clear();
+        if (terrainContext == null ||
+            backup == null)
+        {
+            Debug.Log("No previous modificactions found");
+            return;
+        }
+
+        if (terrainContext.terrainData.alphamapLayers != backup.GetLength(2))
+        {
+            Debug.LogWarning("Terrain layers count mismatch");
+            return;
+        }
+        terrainContext.terrainData.SetAlphamaps(boundsContextGS.x, boundsContextGS.y, backup);
+        terrainContext = null;
+    }
+    /// <summary>
+    /// Resets the terrain
+    /// </summary>
+    public void ResetWithoutBackup()
+    {
+        GizmoManager.Instance.Clear(transform);
+        foreach (var child in generated)
+        {
+            DestroyImmediate(child);
+        }
+        generated.Clear();
+        terrainContext = null;
+    }
+    /// <summary>
+    /// Checks distance to 2 closest houses from <paramref name="point"/>
+    /// </summary>
+    /// <param name="houses">An array of OBBs that are considered as obstacles</param>
+    /// <param name="point">Point on terrain map</param>
+    /// <param name="closest1">First closest house point</param>
+    /// <param name="closest2">Second closest house point</param>
+    /// <param name="second">Distance to the second closest house</param>
+    /// <returns>Distance to the first closest house</returns>
+    public float GetDistanceInfo(List<HouseArea> houses, Vector2 point, out Vector2 closest1, out Vector2 closest2, out float second)
+    {
+        float min = float.MaxValue;
+        second = float.MaxValue;
+        closest1 = Vector2.zero;
+        closest2 = Vector2.zero;
+
+
+        foreach (var house in houses)
+        {
+            Vector2 p = house.obb.center;
+            float distance = house.obb.ToClosestPoint(point);
+
+            Vector2 locp = house.obb.InLocal(point);
+            if (locp.x < 1 && locp.y < 1 && locp.x > 0 && locp.y > 0)
+            {
+                second = 0;
+                return 0;
+            }
+            if (distance < min)
+            {
+                second = min;
+                min = distance;
+                closest2 = closest1;
+                closest1 = point - p;
+            }
+            else if (distance < second)
+            {
+                second = distance;
+                closest2 = point - p;
+            }
+        }
+        return min;
+    }
+    /// <summary>
+    /// Paints pixel to road material
+    /// </summary>
+    /// <param name="p">Pixel position</param>
+    /// <param name="map">Alphamaps</param>
+    /// <param name="fac">Paint strength</param>
+    public void SetRoad(Vector2Int p, ref float[,,] map, float fac = 1)
+    {
+        for (int i = 0; i< map.GetLength(2); i++)
+        {
+            map[p.x, p.y, i] *= (1-fac);
+        }
+        map[p.x, p.y, roadID] += fac;
+    }
+}`;
+const code2 = `
+using System;
+using System.Collections.Generic;
+using System.Runtime.ConstrainedExecution;
+using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.LowLevel;
+using UnityEngine.Rendering;
+
+public enum InputDevice
+{
+    Keyboard,
+    Joystick
+}
+
+public enum MovementState
+{
+    Walk = 0,
+    Crouch = 1,
+    Sprint = 2,
+}
+
+[RequireComponent(typeof(Rigidbody), typeof(CapsuleCollider))]
+public class FreePlayerController : PlayerController
+{
+    [SerializeField] List<PhysicsControllerState> states = new List<PhysicsControllerState>();
+    [SerializeField] MovementState currentState = 0;
+    [SerializeField] private float walkFOV = 60f;
+    [SerializeField] private float sprintFOV = 60f;
+    public PhysicsControllerState state => states[(int)currentState];
+
+    public float height
+    {
+        get => coll.height;
+        set => coll.height = value;
+    }
+    public override bool isMoving => _isMoving;
+    public bool _isMoving { get; private set; }
+    bool _startedSprinting;
+    bool _stopedSprinting;
+
+    public bool isGrounded { get; private set; }
+
+    public bool isSprinting { get; private set; }
+    public bool isCrouching { get; private set; }
+    public bool lockControls;
+
+    bool needsCrouchHandling = false;
+
+    public InputDevice inputDevice;
+
+    List<ContactPoint> contacts = new List<ContactPoint>();
+
+    Vector3 castOffset;
+    float castRadius;
+
+    [SerializeField] Transform cameraTransform;
+    [SerializeField] bool _debug;
+    [SerializeField] float _roofDetectionRange;
+
+    Rigidbody rb;
+    CapsuleCollider coll;
+
+    
+
+    private void Awake()
+    {
+        
+        rb = GetComponent<Rigidbody>();
+        coll = GetComponent<CapsuleCollider>();
+    }
+
+    private void OnEnable()
+    {
+    }
+    private void Start()
+    {
+
+
+        if (cameraTransform != null)
+        {
+            cameraTransform.localRotation = transform.rotation;
+        }
+
+    }
+
+    private void Update()
+    {
+        if (lockControls) return;
+        cameraTransform.GetComponent<PlayerCamera>().UpdateTransform(transform.position);
+        if (PlayerInputHandler.Instance.CrouchPressedThisFrame)
+        {
+            needsCrouchHandling = true;
+        }
+    }
+    private void LateUpdate()
+    {
+        if (lockControls) return;
+        LookAround();
+        //timeSinceFixedUpdate = Time.time - lastFixedUpdateTime;
+    }
+    private void FixedUpdate()
+    {
+        if (lockControls) return;
+        height = state.height;
+        Move();
+        contacts.Clear();
+    }
+    private void OnCollisionStay(Collision collision)
+    {
+        //List<ContactPoint> currentContacts = new List<ContactPoint>();
+        List<ContactPoint> currentContacts = new List<ContactPoint>();
+        collision.GetContacts(currentContacts);
+        contacts.AddRange(currentContacts);
+    }
+
+    private void OnDrawGizmos()
+    {
+        if (!_debug) return;
+
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawRay(transform.position, transform.up * _roofDetectionRange);
+        
+        Gizmos.DrawSphere(transform.position + castOffset, castRadius);
+
+        foreach (var contact in contacts)
+        {
+            Gizmos.color = Color.magenta;
+            Gizmos.DrawLine(contact.point, contact.point + contact.normal);
+        }
+    }
+
+
+    private void LookAround()
+    {
+        //if (cameraTransform)
+        //    cameraTransform.localRotation = Quaternion.Euler(-turn.y, 0f, 0f);
+
+    }
+
+    public void SetNewStates( PhysicsControllerState walk, PhysicsControllerState crouch, PhysicsControllerState sprint)
+    {
+        states[0] = walk;
+        states[1] = crouch;
+        states[2] = sprint;
+    }
+
+    public Quaternion GetCameraRotation()
+    {
+        return cameraTransform.rotation;
+    }
+    private void Move()
+    {
+        GizmoManager.Instance.Clear(transform);
+        Vector3 moveDirection = Vector3.zero;
+        bool shouldJump = false;
+        isGrounded = false;
+        List<Vector3> constraints = new List<Vector3>();
+
+        //----------------GROUND CHECK-------------------------
+
+        Vector3 groundNormal = Vector3.up;
+        foreach (ContactPoint c in contacts)
+        {
+            float flatness = c.normal.y;
+            if (flatness > Mathf.Cos(state.criticalAngle * Mathf.Deg2Rad))
+            {
+                groundNormal = c.normal;
+                isGrounded = true;
+            }
+
+            //Debug.Log(flatness + " <----> " + state.criticalAngle);
+        }
+
+        //----------------INPUT READ--------------------------
+
+        if (!lockControls)
+        {
+            Vector3 forward = Vector3.ProjectOnPlane(cameraTransform.forward, Vector3.up).normalized;
+            Vector3 up;
+
+            //account for slope
+            if (isGrounded)
+            {
+                up = groundNormal;
+                forward = Vector3.ProjectOnPlane(forward, up);
+            }
+            Vector3 right = Vector3.Cross(forward, Vector3.down);
+
+            moveDirection += PlayerInputHandler.Instance.Move.y * forward;
+            moveDirection += PlayerInputHandler.Instance.Move.x * right;
+
+            if (PlayerInputHandler.Instance.JumpPressed && isGrounded) shouldJump = true;
+
+
+            if (isCrouching)
+            {
+                if (needsCrouchHandling)
+                {
+                    if (!Physics.Raycast(transform.position, transform.up, _roofDetectionRange,int.MaxValue,QueryTriggerInteraction.Ignore))
+                        SwitchState(MovementState.Walk);
+                    needsCrouchHandling = false;
+                }
+                else if (PlayerInputHandler.Instance.SprintPressed)
+                {
+                    if (!Physics.Raycast(transform.position, transform.up, _roofDetectionRange))
+                        SwitchState(MovementState.Sprint);
+                }
+            }
+            else
+            {
+                if (needsCrouchHandling)
+                {
+                    SwitchState(MovementState.Crouch);
+                    needsCrouchHandling = false;
+                }
+                else if (PlayerInputHandler.Instance.SprintPressed)
+                    SwitchState(MovementState.Sprint);
+                else
+                    SwitchState(MovementState.Walk);
+            }
+        }
+        //-------------STATE RESOLUTION-------------
+
+        if (moveDirection.magnitude > 0.1f)
+        {
+            _isMoving = true;
+        }
+        else
+        {
+            _isMoving = false;
+        }
+
+        if(_isMoving && currentState == MovementState.Sprint)
+        {
+            if(!_startedSprinting)
+            {
+                OnFOVChange?.Invoke(sprintFOV);
+            }
+            _startedSprinting = true;
+            _stopedSprinting = false;
+        }
+        else
+        {
+            if(!_stopedSprinting)
+            {
+                OnFOVChange?.Invoke(walkFOV);
+
+            }
+            _startedSprinting = false;
+            _stopedSprinting = true;
+
+        }
+
+
+        moveDirection = moveDirection.normalized * state.movementSpeed;
+        Vector3 rbCopy;
+        if (isGrounded)
+        {
+            rbCopy = new Vector3(moveDirection.x, moveDirection.y, moveDirection.z);
+            rb.useGravity = false;
+        }
+        else
+        {
+            rbCopy = rb.linearVelocity + new Vector3(moveDirection.x * state.airSpeed, 0, moveDirection.z * state.airSpeed);
+            rb.useGravity = true;
+        }
+
+
+        //-------------COLLISION RESOLUTION-------------
+
+        if (rbCopy.magnitude > state.speedLimit)
+            rbCopy = rbCopy.normalized * state.speedLimit;
+
+        foreach (ContactPoint c in contacts)
+        {
+            float dot = Vector3.Dot(c.normal, rbCopy);
+            if (dot < 0f)
+            {
+                constraints.Add(c.normal);
+            }
+        }
+
+        constraints.Add(rbCopy);
+
+        Orhtogonalise(constraints);
+
+        rb.linearVelocity = rbCopy;
+
+        GizmoManager.Instance.StageLine(Vector3.zero, rb.linearVelocity, Color.blue, transform);
+
+        rb.rotation = Quaternion.Euler(0f, GetCameraRotation().eulerAngles.x, 0f);
+
+        // -----------------JUMP-----------------
+
+        if (shouldJump)
+        {
+            rb.linearVelocity = new Vector3(rb.linearVelocity.x/2, state.jumpHeight, rb.linearVelocity.z/2);
+        }
+    }
+
+    //to learn more about the thing down here google "Gram Schmidt process"
+    public void Orhtogonalise(List<Vector3> vecs)
+    {
+        for (int i = 1; i < vecs.Count; i++)
+        {
+            for (int j = 0; j < i; j++)
+            {
+                vecs[i] -= Vector3.Project(vecs[i], vecs[j]);
+            }
+        }
+    }
+
+    public void SwitchState (MovementState newState)
+    {
+        if (currentState == newState) return;
+        rb.position += new Vector3(0, (states[(int)newState].height - state.height) / 2f, 0);
+        currentState = newState;
+        isCrouching = newState == MovementState.Crouch;
+        isSprinting = newState == MovementState.Sprint;
+
+        OnCameraShakeChange?.Invoke((CameraWalkingShake.State)newState);
+    }
+    public override void EnableControl()
+    {
+        OnCameraShakeChange?.Invoke(CameraWalkingShake.State.WALKING);
+        transform.position = cameraTransform.position;
+        rb.position = cameraTransform.position;
+        coll.enabled = true;
+        lockControls = false;
+        rb.isKinematic = false;
+        rb.WakeUp();
+
+        isEnabled = true;
+
+        if (_debug)
+        Debug.Log("enabled free move controls");
+    }
+
+    public override void DisableControl()
+    {
+        rb.Sleep();
+        rb.isKinematic = true;
+        coll.enabled = false;
+        lockControls = true;
+        isEnabled = false;
+
+        _isMoving = false;
+        if(_debug)
+        Debug.Log("disabled free move controls");
+    }
+}
+`
+const code3 = `
+using DG.Tweening;
+using System;
+using System.Collections;
+using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.InputSystem;
+using UnityEngine.Playables;
+
+public class QuickTimeEvent : MonoBehaviour
+{
+
+    [Header("Time")]
+    public float totalTime;
+    float time;
+    bool isReading;
+
+    [Header("Action")]
+    public bool success { get; private set; }
+
+    public string actionName;
+    public int pressCount;
+    int pressCountCurrent;
+
+    [Header("Events")]
+    public UnityEvent OnStartReading;
+    public UnityEvent OnStopReading;
+    public UnityEvent OnSuccess;
+    public UnityEvent OnFail;
+    public UnityEvent OnActionPress;
+
+    public QuickTimeEventIndicator indicator;
+
+    public bool Check()
+    {
+        if (pressCountCurrent >= pressCount)
+        {
+            success = true;
+        }
+        else
+        {
+            success = false;
+        }
+        return success;
+    }
+
+    public void StartReading()
+    {
+        OnStartReading?.Invoke();
+        InputSystem.actions.FindActionMap("Player").FindAction(actionName).started += OnPress;
+        isReading = true;
+        pressCountCurrent = 0;
+        Debug.Log("QuickTimeEvent activated");
+        if (indicator != null)
+        {
+            indicator.pressCount = pressCount;
+            indicator.gameObject.SetActive(true);
+        }
+    }
+
+    public void Update()
+    {
+        if (isReading)
+        {
+            time += Time.deltaTime;
+            if (time >= totalTime || pressCountCurrent >= pressCount)
+            {
+                isReading = false;
+                StopReading();
+                time = 0f;
+            }
+        }
+    }
+    public void StopReading()
+    {
+        isReading = false;
+        Check();
+        OnStopReading?.Invoke();
+        if (success)
+        {
+            indicator.SetSuccess();
+            OnSuccess?.Invoke();
+        }
+        else
+        {
+            indicator.SetFail();
+            OnFail?.Invoke();
+        }
+
+        if (indicator != null)
+        {
+            indicator.SmoothDisable();
+        }
+    }
+
+    public void OnPress(InputAction.CallbackContext callback)
+    {
+        OnActionPress?.Invoke();
+        pressCountCurrent++;
+    }
+}
+`
+document.getElementById("csharp-code1").textContent = code1;
+document.getElementById("csharp-code2").textContent = code2;
+document.getElementById("csharp-code3").textContent = code3;
+</script>
+
+</html>
