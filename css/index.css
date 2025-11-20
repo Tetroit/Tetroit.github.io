@@ -414,7 +414,7 @@ a:active {
         justify-content: center;
         display: flex;
     }
-    .projImg>img,video{
+    .projImg > img, .projImg > video, .projImg > iframe{
         object-fit: contain;
         box-sizing: border-box;
         align-self: center;
